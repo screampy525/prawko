@@ -1,0 +1,169 @@
+/* Arkusze egzaminacyjne do wydruku — układ pod A4.
+   Świadomie jasny i monochromatyczny: to ma dobrze wyglądać na papierze,
+   a nie na ekranie, więc nie ma tu motywu ciemnego. */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #6b6862;
+  color: #14130f;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+/* ---------- pasek narzędzi (tylko na ekranie) ---------- */
+
+.pasek-narzedzi {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 12px 20px;
+  background: #1f1e1d; color: #f2f0ea;
+  border-bottom: 1px solid #000;
+}
+.pasek-tytul { font-family: ui-serif, Georgia, serif; font-size: 1.15rem; }
+.pasek-info { font-size: .88rem; color: #a8a49a; }
+.pasek-akcje { margin-left: auto; display: flex; gap: 8px; }
+
+.przycisk {
+  font: inherit; font-weight: 550; font-size: .9rem;
+  padding: 8px 15px; border-radius: 9px; cursor: pointer;
+  background: #2f2e2b; color: #f2f0ea; border: 1px solid #4a4844;
+  text-decoration: none; display: inline-flex; align-items: center;
+}
+.przycisk:hover { background: #3a3835; }
+.przycisk.glowny { background: #c4633f; border-color: #c4633f; color: #fff; }
+.przycisk.glowny:hover { background: #a9502f; }
+.przycisk:disabled { opacity: .5; cursor: not-allowed; }
+
+.wskazowka {
+  max-width: 210mm; margin: 16px auto 0;
+  padding: 11px 16px; border-radius: 9px;
+  background: #fcf3e0; color: #6b5312; font-size: .87rem;
+  border-left: 3px solid #a97a1f;
+}
+
+/* ---------- strona arkusza ---------- */
+
+.strona {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 18px auto;
+  padding: 13mm 12mm 12mm;
+  background: #fff;
+  box-shadow: 0 3px 16px rgba(0,0,0,.35);
+}
+
+.naglowek-arkusza {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 14px; padding-bottom: 7px; margin-bottom: 11px;
+  border-bottom: 2px solid #14130f;
+}
+.naglowek-arkusza h1 {
+  font-family: ui-serif, Georgia, serif;
+  font-size: 1.35rem; font-weight: 600; margin: 0;
+}
+.naglowek-arkusza .meta { font-size: .78rem; color: #55524c; text-align: right; line-height: 1.5; }
+.linie-na-dane { font-size: .8rem; color: #55524c; margin-bottom: 12px; }
+.linie-na-dane span { display: inline-block; border-bottom: 1px solid #98948c; min-width: 62mm; margin-right: 12px; }
+
+.naglowek-czesci {
+  font-size: .74rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  color: #55524c; background: #f0eee6;
+  padding: 4px 9px; border-radius: 4px; margin: 0 0 9px;
+  break-inside: avoid;
+}
+
+/* ---------- siatka pytań ---------- */
+
+.pytania { column-count: 2; column-gap: 8mm; }
+
+.pytanie {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 6mm;
+  padding-bottom: 4mm;
+  border-bottom: 1px dotted #c9c5bb;
+}
+
+.pytanie-gora {
+  display: flex; align-items: baseline; gap: 6px;
+  font-size: .72rem; color: #55524c; margin-bottom: 3px;
+}
+.pytanie-gora .lp { font-weight: 700; font-size: .92rem; color: #14130f; }
+.pytanie-gora .pkt { margin-left: auto; }
+
+.pytanie img {
+  display: block; width: 100%; height: auto;
+  max-height: 46mm; object-fit: contain;
+  background: #ebe8e0; border: 1px solid #c9c5bb; border-radius: 3px;
+  margin-bottom: 4px;
+}
+.podpis-klatki { font-size: .64rem; color: #7d7a72; margin: -2px 0 4px; font-style: italic; }
+.brak-obrazu {
+  font-size: .68rem; color: #7d7a72; font-style: italic;
+  padding: 8px; border: 1px dashed #c9c5bb; border-radius: 3px; margin-bottom: 4px; text-align: center;
+}
+
+.pytanie-tresc { font-size: .84rem; line-height: 1.35; white-space: pre-wrap; margin-bottom: 5px; }
+
+.odpowiedzi { display: flex; flex-direction: column; gap: 2px; font-size: .8rem; }
+.odpowiedzi.tak-nie { flex-direction: row; gap: 16px; }
+.odpowiedz { display: flex; align-items: flex-start; gap: 5px; }
+.kratka {
+  flex: 0 0 auto; width: 3.6mm; height: 3.6mm; margin-top: 1px;
+  border: 1px solid #55524c; border-radius: 1px;
+  display: inline-block;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.klucz-odp { font-weight: 700; margin-right: 1px; }
+
+/* ---------- klucz odpowiedzi ---------- */
+
+.klucz h2 {
+  font-family: ui-serif, Georgia, serif; font-size: 1.2rem; margin: 0 0 3px;
+}
+.klucz .podtytul { font-size: .8rem; color: #55524c; margin-bottom: 12px; }
+.tabela-klucza { column-count: 4; column-gap: 8mm; font-size: .82rem; }
+.wiersz-klucza {
+  display: flex; gap: 7px; padding: 2px 0;
+  border-bottom: 1px dotted #d5d1c7; break-inside: avoid;
+}
+.wiersz-klucza .lp { color: #55524c; min-width: 20px; text-align: right; }
+.wiersz-klucza .odp { font-weight: 700; }
+.wiersz-klucza .pkt { margin-left: auto; color: #7d7a72; font-size: .74rem; }
+
+.stopka-arkusza {
+  margin-top: 9mm; padding-top: 4px; border-top: 1px solid #c9c5bb;
+  font-size: .68rem; color: #7d7a72;
+  display: flex; justify-content: space-between;
+}
+
+/* ---------- druk ---------- */
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  html, body { background: #fff; }
+  .pasek-narzedzi, .wskazowka { display: none !important; }
+  .strona {
+    width: auto; min-height: 0;
+    margin: 0; padding: 0;
+    box-shadow: none;
+    page-break-after: always;
+    break-after: page;
+  }
+  .strona:last-child { page-break-after: auto; break-after: auto; }
+  .naglowek-czesci { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+@media (max-width: 230mm) {
+  .strona { width: auto; max-width: 100%; margin: 12px 8px; padding: 14px; }
+  .pytania, .tabela-klucza { column-count: 1; }
+}

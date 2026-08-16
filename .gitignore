@@ -1,0 +1,26 @@
+# Multimedia - 3,6 GB po konwersji, 9 GB w źródłach. Nie trzymamy tego w repozytorium:
+# filmy i zdjęcia pochodzą z oficjalnego katalogu i odtwarza je narzedzia/konwertuj-media.sh,
+# a rysunki znaków pobiera narzedzia/pobierz-znaki.py.
+/media/
+/multimedia do pytań/
+/cz. 2/
+
+# Postęp nauki: konta, hasła (hash scrypt) i historia odpowiedzi. Dane osobowe,
+# a przy tym plik lokalny dla każdej instalacji.
+/app/dane/
+
+# Klucz API do generowania wyjaśnień - nigdy nie trafia do repozytorium.
+/narzedzia/klucz-api.txt
+
+# Stan wznawiania generowania wyjaśnień - dotyczy jednej maszyny.
+/narzedzia/stan-wyjasnien.json
+
+# Śmieci systemowe i logi
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Cache Pythona
+__pycache__/
+*.pyc

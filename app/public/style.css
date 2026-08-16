@@ -1,0 +1,841 @@
+/* Prawko — style aplikacji.
+   Język wizualny narzędziowy: monochromatyczne tło, cienkie ramki zamiast cieni,
+   akcent bez barwy (biel na ciemnym, czerń na jasnym). Kolor niesie wyłącznie
+   znaczenie - poprawnie, błędnie, ostrzeżenie - a nie dekorację. */
+
+:root {
+  --tlo:            #ffffff;
+  --tlo-panel:      #fafafa;
+  --powierzchnia:   #ffffff;
+  --powierzchnia-2: #f4f4f4;
+  --powierzchnia-3: #ebebeb;
+  --ramka:          #e8e8e8;
+  --ramka-mocna:    #d4d4d4;
+  --tekst:          #0a0a0a;
+  --tekst-2:        #737373;
+  --tekst-3:        #a1a1a1;
+  --akcent:         #0a0a0a;
+  --akcent-ciemny:  #2e2e2e;
+  --akcent-tlo:     #f0f0f0;
+  --na-kolorze:     #ffffff;
+  --dobrze:         #1a7f37;
+  --dobrze-tlo:     #eaf6ec;
+  --zle:            #cf222e;
+  --zle-tlo:        #fdeceb;
+  --uwaga:          #9a6700;
+  --uwaga-tlo:      #fdf5e3;
+  --dane:           #1f6feb;
+  --polysk:         rgba(0,0,0,.04);
+  --cien:           0 1px 2px rgba(0,0,0,.04);
+  --cien-mocny:     0 8px 28px rgba(0,0,0,.14);
+  --promien:        14px;
+  --promien-pole:   10px;
+  --promien-maly:   8px;
+  --naglowki:       ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --bezszeryf:      ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono:           ui-monospace, "Cascadia Mono", "SF Mono", Consolas, monospace;
+  --panel-szer:     240px;
+}
+
+:root[data-motyw="ciemny"] {
+  --tlo:            #0a0a0a;
+  --tlo-panel:      #0e0e0e;
+  --powierzchnia:   #131313;
+  --powierzchnia-2: #1a1a1a;
+  --powierzchnia-3: #242424;
+  --ramka:          #232323;
+  --ramka-mocna:    #333333;
+  --tekst:          #f2f2f2;
+  --tekst-2:        #8c8c8c;
+  --tekst-3:        #5f5f5f;
+  --akcent:         #fafafa;
+  --akcent-ciemny:  #d6d6d6;
+  --akcent-tlo:     #1f1f1f;
+  --na-kolorze:     #0a0a0a;
+  --dobrze:         #3fb950;
+  --dobrze-tlo:     #13251a;
+  --zle:            #f85149;
+  --zle-tlo:        #2b1618;
+  --uwaga:          #d29922;
+  --uwaga-tlo:      #26200f;
+  --dane:           #4c9aff;
+  --polysk:         rgba(255,255,255,.055);
+  --cien:           0 1px 2px rgba(0,0,0,.5);
+  --cien-mocny:     0 10px 34px rgba(0,0,0,.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-motyw="jasny"]) {
+    --tlo:            #0a0a0a;
+    --tlo-panel:      #0e0e0e;
+    --powierzchnia:   #131313;
+    --powierzchnia-2: #1a1a1a;
+    --powierzchnia-3: #242424;
+    --ramka:          #232323;
+    --ramka-mocna:    #333333;
+    --tekst:          #f2f2f2;
+    --tekst-2:        #8c8c8c;
+    --tekst-3:        #5f5f5f;
+    --akcent:         #fafafa;
+    --akcent-ciemny:  #d6d6d6;
+    --akcent-tlo:     #1f1f1f;
+    --na-kolorze:     #0a0a0a;
+    --dobrze:         #3fb950;
+    --dobrze-tlo:     #13251a;
+    --zle:            #f85149;
+    --zle-tlo:        #2b1618;
+    --uwaga:          #d29922;
+    --uwaga-tlo:      #26200f;
+    --dane:           #4c9aff;
+    --polysk:         rgba(255,255,255,.055);
+    --cien:           0 1px 2px rgba(0,0,0,.5);
+    --cien-mocny:     0 10px 34px rgba(0,0,0,.6);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--tlo);
+  color: var(--tekst);
+  font-family: var(--bezszeryf);
+  font-size: 14.5px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3 { font-family: var(--naglowki); font-weight: 600; letter-spacing: -.025em; margin: 0; }
+h1 { font-size: 1.45rem; }
+h2 { font-size: 1.15rem; }
+h3 { font-size: .98rem; }
+p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+
+.ukryty { display: none !important; }
+
+/* ---------- ładowanie ---------- */
+
+.ladowanie {
+  position: fixed; inset: 0; z-index: 100;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+  background: var(--tlo); color: var(--tekst-2);
+}
+.spinner {
+  width: 30px; height: 30px; border-radius: 50%;
+  border: 2.5px solid var(--ramka); border-top-color: var(--akcent);
+  animation: obrot .8s linear infinite;
+}
+@keyframes obrot { to { transform: rotate(360deg); } }
+
+/* ---------- logowanie ---------- */
+
+.ekran-logowania {
+  position: fixed; inset: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: center; padding: 24px;
+  background:
+    radial-gradient(circle at 15% 10%, var(--akcent-tlo), transparent 45%),
+    radial-gradient(circle at 85% 90%, var(--tlo-panel), transparent 50%),
+    var(--tlo);
+}
+.logowanie-karta {
+  width: 100%; max-width: 380px;
+  background: var(--powierzchnia);
+  border: 1px solid var(--ramka);
+  border-radius: 20px; padding: 36px 32px;
+  box-shadow: var(--cien-mocny);
+  text-align: center;
+}
+.logowanie-karta h1 { margin: 12px 0 2px; font-size: 1.9rem; }
+.logowanie-podtytul { color: var(--tekst-2); font-size: .9rem; margin-bottom: 26px; }
+.logowanie-karta form { display: flex; flex-direction: column; gap: 14px; text-align: left; }
+
+.pole { display: flex; flex-direction: column; gap: 6px; }
+.pole > span { font-size: .8rem; font-weight: 600; color: var(--tekst-2); }
+
+/* Pola są wypełnione, nie obrysowane - kontrolka jest bryłą na tle,
+   a nie ramką wokół pustego miejsca. */
+input[type=text], input[type=password], input[type=search], select, textarea {
+  font: inherit; color: var(--tekst);
+  background: var(--powierzchnia-2);
+  border: 1px solid transparent;
+  border-radius: var(--promien-pole);
+  padding: 10px 13px; width: 100%;
+  transition: background .15s, border-color .15s, box-shadow .15s;
+}
+input::placeholder, textarea::placeholder { color: var(--tekst-3); }
+input:hover, textarea:hover { background: var(--powierzchnia-3); }
+input:focus, select:focus, textarea:focus {
+  outline: none; background: var(--powierzchnia-3);
+  border-color: var(--ramka-mocna);
+  box-shadow: 0 0 0 3px var(--akcent-tlo);
+}
+textarea { resize: vertical; min-height: 76px; font-family: inherit; }
+
+/* ---------- własna lista wyboru ---------- */
+
+.wybor { position: relative; display: inline-block; width: 100%; }
+.wybor select { display: none; }
+
+.wybor-przycisk {
+  font: inherit; color: var(--tekst); cursor: pointer; text-align: left;
+  background: var(--powierzchnia-2);
+  border: 1px solid transparent;
+  border-radius: var(--promien-pole);
+  padding: 10px 13px; width: 100%;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  transition: border-color .15s, box-shadow .15s;
+}
+.wybor-przycisk:hover { background: var(--powierzchnia-3); }
+.wybor-przycisk:focus-visible,
+.wybor-przycisk[aria-expanded="true"] {
+  outline: none; background: var(--powierzchnia-3);
+  border-color: var(--ramka-mocna);
+  box-shadow: 0 0 0 3px var(--akcent-tlo);
+}
+.wybor-etykieta { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wybor-strzalka {
+  width: 15px; height: 15px; flex: 0 0 auto; color: var(--tekst-3);
+  fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+  transition: transform .16s;
+}
+.wybor-przycisk[aria-expanded="true"] .wybor-strzalka { transform: rotate(180deg); }
+
+.wybor-lista {
+  position: absolute; z-index: 60; left: 0; right: 0; top: calc(100% + 6px);
+  max-height: 260px; overflow-y: auto; padding: 5px;
+  background: var(--powierzchnia);
+  border: 1px solid var(--ramka-mocna);
+  border-radius: var(--promien-maly);
+  box-shadow: var(--cien-mocny);
+  animation: wybor-wejscie .13s ease-out;
+}
+.wybor-lista.w-gore { top: auto; bottom: calc(100% + 6px); }
+@keyframes wybor-wejscie { from { opacity: 0; transform: translateY(-4px); } }
+
+.wybor-pozycja {
+  padding: 8px 11px; border-radius: 7px; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.wybor-pozycja.podswietlona { background: var(--powierzchnia-2); }
+.wybor-pozycja.wybrana { color: var(--akcent); font-weight: 600; }
+/* Ptaszek przy wybranej pozycji zamiast pasa koloru - kolor niesie już akcent. */
+.wybor-pozycja.wybrana::after { content: "✓"; font-weight: 500; }
+
+/* Pasek przewijania w liście dopasowany do palety, żeby nie wracał systemowy. */
+.wybor-lista { scrollbar-width: thin; scrollbar-color: var(--ramka-mocna) transparent; }
+.wybor-lista::-webkit-scrollbar { width: 8px; }
+.wybor-lista::-webkit-scrollbar-thumb { background: var(--ramka-mocna); border-radius: 99px; }
+.wybor-lista::-webkit-scrollbar-track { background: transparent; }
+
+.komunikat-bledu {
+  background: var(--zle-tlo); color: var(--zle);
+  border: 1px solid color-mix(in srgb, var(--zle) 30%, transparent);
+  border-radius: var(--promien-maly); padding: 9px 12px; font-size: .87rem;
+}
+
+/* ---------- przyciski ---------- */
+
+.przycisk {
+  font: inherit; font-weight: 550;
+  border-radius: var(--promien-pole);
+  border: 1px solid transparent;
+  padding: 9px 16px; cursor: pointer;
+  background: var(--powierzchnia-2); color: var(--tekst);
+  transition: background .15s, border-color .15s, transform .06s, opacity .15s;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+}
+.przycisk:hover { background: var(--powierzchnia-3); }
+.przycisk:active { transform: translateY(1px); }
+.przycisk:disabled { opacity: .45; cursor: not-allowed; transform: none; }
+
+.przycisk.glowny { background: var(--akcent); color: var(--na-kolorze); border-color: var(--akcent); }
+.przycisk.glowny:hover { background: var(--akcent-ciemny); border-color: var(--akcent-ciemny); }
+
+.przycisk.tekstowy { background: transparent; border-color: transparent; color: var(--tekst-2); }
+.przycisk.tekstowy:hover { background: var(--tlo-panel); color: var(--tekst); }
+.przycisk.szeroki { width: 100%; }
+.przycisk.maly { padding: 5px 10px; font-size: .82rem; }
+.przycisk.niebezpieczny { color: var(--zle); border-color: color-mix(in srgb, var(--zle) 35%, transparent); background: transparent; }
+.przycisk.niebezpieczny:hover { background: var(--zle-tlo); }
+
+/* ---------- układ ---------- */
+
+.aplikacja { display: flex; min-height: 100%; }
+
+.panel-boczny {
+  position: fixed; inset: 0 auto 0 0; width: var(--panel-szer);
+  background: var(--tlo-panel);
+  border-right: 1px solid var(--ramka);
+  display: flex; flex-direction: column;
+  padding: 20px 14px 16px;
+  z-index: 20;
+}
+
+.marka { display: flex; align-items: center; gap: 9px; padding: 0 8px 22px; }
+/* Ikony rysowane linią - kolor bierze się z tekstu, więc działają w obu motywach
+   i nie trzeba ich dublować dla ciemnego tła. */
+.sprite-ikon { position: absolute; width: 0; height: 0; overflow: hidden; }
+.ikona {
+  width: 18px; height: 18px; flex: 0 0 auto;
+  fill: none; stroke: currentColor;
+  stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+}
+.ikona-marka { width: 26px; height: 26px; color: var(--akcent); stroke-width: 1.6; }
+.logowanie-znak { width: 46px; height: 46px; color: var(--akcent); stroke-width: 1.5; margin: 0 auto 14px; display: block; }
+.marka-nazwa { font-family: var(--naglowki); font-size: 1.2rem; font-weight: 700; letter-spacing: -.03em; }
+
+.nawigacja { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.nawigacja a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 12px; border-radius: var(--promien-maly);
+  color: var(--tekst-2); font-size: .92rem; font-weight: 500;
+  transition: background .13s, color .13s;
+}
+.nawigacja a:hover { background: var(--powierzchnia-2); color: var(--tekst); }
+.nawigacja a.aktywny { background: var(--powierzchnia-3); color: var(--tekst); font-weight: 550; }
+.nawigacja .ikona { opacity: .7; }
+.nawigacja a.aktywny .ikona { color: var(--akcent); opacity: 1; }
+
+.plakietka {
+  margin-left: auto; background: var(--powierzchnia-3); color: var(--tekst);
+  font-size: .7rem; font-weight: 650; padding: 1.5px 8px; border-radius: 999px;
+}
+.plakietka:empty { display: none; }
+
+.panel-stopka { display: flex; flex-direction: column; gap: 12px; padding-top: 14px; border-top: 1px solid var(--ramka); }
+.wybor-kategorii { display: flex; flex-direction: column; gap: 5px; padding: 0 4px; }
+.wybor-kategorii label { font-size: .74rem; font-weight: 600; color: var(--tekst-3); text-transform: uppercase; letter-spacing: .05em; }
+.wybor-kategorii .wybor-przycisk { padding: 7px 10px; font-size: .88rem; }
+.konto { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 4px; font-size: .85rem; color: var(--tekst-2); }
+#nazwa-uzytkownika { font-weight: 600; color: var(--tekst); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.tresc {
+  flex: 1; margin-left: var(--panel-szer);
+  padding: 34px 34px 80px;
+  min-width: 0;
+}
+/* Na szerokich ekranach treść zostaje wyśrodkowana zamiast kleić się do panelu. */
+.kontener { max-width: 1080px; margin: 0 auto; }
+
+.nawigacja-dolna { display: none; }
+.pasek-mobilny { display: none; }
+
+/* ---------- nagłówek widoku ---------- */
+
+.naglowek-widoku { margin-bottom: 26px; }
+.naglowek-widoku h1 { margin-bottom: 4px; }
+.naglowek-widoku p { color: var(--tekst-2); font-size: .93rem; }
+.naglowek-rzad { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+/* ---------- karty i siatki ---------- */
+
+.karta {
+  background: var(--powierzchnia);
+  border: 1px solid var(--ramka);
+  border-radius: var(--promien);
+  padding: 18px;
+  /* Cienka jaśniejsza kreska u góry - karta wygląda jak bryła oświetlona
+     z gory, zamiast jak prostokąt obrysowany linią. */
+  background-image: linear-gradient(var(--polysk), transparent 1px);
+}
+
+.siatka { display: grid; gap: 14px; }
+.siatka.kolumny-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.siatka.kolumny-3 { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+.siatka.kolumny-4 { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+
+.kafelek-liczby { text-align: left; }
+.kafelek-liczby .etykieta { font-size: .82rem; color: var(--tekst-2); font-weight: 500; }
+.kafelek-liczby .wartosc { font-family: var(--naglowki); font-size: 1.85rem; font-weight: 600; letter-spacing: -.03em; line-height: 1.15; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.kafelek-liczby .dopisek { font-size: .82rem; color: var(--tekst-2); margin-top: 2px; }
+.kafelek-liczby .wartosc.dobrze { color: var(--dobrze); }
+.kafelek-liczby .wartosc.zle { color: var(--zle); }
+.kafelek-liczby .wartosc.akcent { color: var(--dane); }
+
+/* ---------- pasek postępu ---------- */
+
+.pasek { height: 6px; background: var(--powierzchnia-3); border-radius: 999px; overflow: hidden; }
+.pasek > i { display: block; height: 100%; background: var(--dane); border-radius: 999px; transition: width .35s ease; }
+.pasek.zielony > i { background: var(--dobrze); }
+.pasek.gruby { height: 9px; }
+
+/* ---------- paczki nauki ---------- */
+
+.siatka-paczek { display: grid; grid-template-columns: repeat(auto-fill, minmax(178px, 1fr)); gap: 12px; }
+.paczka {
+  background: var(--powierzchnia); border: 1px solid var(--ramka);
+  border-radius: var(--promien); padding: 15px; cursor: pointer; text-align: left;
+  font: inherit; color: inherit; box-shadow: var(--cien);
+  transition: border-color .15s, transform .1s, box-shadow .15s;
+  display: flex; flex-direction: column; gap: 9px;
+}
+.paczka:hover { border-color: var(--akcent); transform: translateY(-2px); box-shadow: var(--cien-mocny); }
+.paczka-gora { display: flex; align-items: baseline; justify-content: space-between; }
+.paczka-nazwa { font-weight: 650; font-size: .96rem; }
+.paczka-zakres { font-size: .76rem; color: var(--tekst-3); font-variant-numeric: tabular-nums; }
+.paczka-dol { display: flex; align-items: center; justify-content: space-between; font-size: .8rem; color: var(--tekst-2); }
+.paczka.ukonczona { border-color: color-mix(in srgb, var(--dobrze) 45%, var(--ramka)); }
+.paczka.ukonczona .paczka-nazwa::after { content: " ✓"; color: var(--dobrze); }
+
+/* ---------- pytanie ---------- */
+
+.scena-pytania { max-width: 860px; margin: 0 auto; }
+
+.pasek-sesji {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.pasek-sesji .pasek { flex: 1; min-width: 140px; }
+.licznik-sesji { font-size: .85rem; color: var(--tekst-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.karta-pytania {
+  background: var(--powierzchnia); border: 1px solid var(--ramka);
+  border-radius: var(--promien); box-shadow: var(--cien); overflow: hidden;
+}
+
+.media-pytania { background: #000; display: flex; align-items: center; justify-content: center; }
+.media-pytania.z-nakladka { position: relative; }
+
+.przycisk-start {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font: inherit; font-size: 1.15rem; font-weight: 650; letter-spacing: .02em;
+  color: #fff; cursor: pointer; border: none;
+  background: rgba(20, 19, 15, .55);
+  backdrop-filter: blur(1.5px);
+  transition: background .15s;
+}
+.przycisk-start:hover { background: rgba(20, 19, 15, .38); }
+.przycisk-start:focus-visible { outline: 3px solid var(--akcent); outline-offset: -3px; }
+.media-pytania img, .media-pytania video { width: 100%; max-height: 62vh; object-fit: contain; display: block; }
+
+.tresc-pytania { padding: 22px; }
+
+.znaczniki { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; margin-bottom: 12px; }
+.znacznik {
+  font-size: .74rem; font-weight: 550; letter-spacing: .01em;
+  padding: 3px 10px; border-radius: 999px;
+  background: var(--powierzchnia-2); color: var(--tekst-2); border: 1px solid transparent;
+}
+.znacznik.akcent { background: var(--powierzchnia-3); color: var(--tekst); }
+.znacznik.uwaga { background: var(--uwaga-tlo); color: var(--uwaga); }
+.znaczniki .z-prawej { margin-left: auto; display: flex; gap: 6px; }
+
+.pytanie-tekst { font-family: var(--bezszeryf); font-size: 1.16rem; font-weight: 500; line-height: 1.5; white-space: pre-wrap; }
+
+.odpowiedzi { display: flex; flex-direction: column; gap: 9px; margin-top: 18px; }
+.odpowiedz {
+  display: flex; align-items: flex-start; gap: 12px; width: 100%; text-align: left;
+  font: inherit; color: inherit; cursor: pointer;
+  background: var(--powierzchnia); border: 1.5px solid var(--ramka-mocna);
+  border-radius: var(--promien-maly); padding: 12px 14px;
+  transition: border-color .12s, background .12s, transform .06s;
+}
+.odpowiedz:hover:not(:disabled) { border-color: var(--akcent); background: var(--akcent-tlo); }
+.odpowiedz:active:not(:disabled) { transform: translateY(1px); }
+.odpowiedz:disabled { cursor: default; }
+.odpowiedz .klucz {
+  flex: 0 0 auto; width: 25px; height: 25px; border-radius: 7px;
+  display: grid; place-items: center; font-size: .82rem; font-weight: 700;
+  background: var(--powierzchnia-2); border: 1px solid var(--ramka-mocna); color: var(--tekst-2);
+}
+.odpowiedz .etykieta-odp { flex: 1; padding-top: 1px; }
+
+.odpowiedz.wybrana { border-color: var(--akcent); background: var(--akcent-tlo); }
+.odpowiedz.wybrana .klucz { background: var(--akcent); color: var(--na-kolorze); border-color: var(--akcent); }
+.odpowiedz.poprawna { border-color: var(--dobrze); background: var(--dobrze-tlo); }
+.odpowiedz.poprawna .klucz { background: var(--dobrze); color: var(--na-kolorze); border-color: var(--dobrze); }
+.odpowiedz.bledna { border-color: var(--zle); background: var(--zle-tlo); }
+.odpowiedz.bledna .klucz { background: var(--zle); color: var(--na-kolorze); border-color: var(--zle); }
+
+.odpowiedzi.tak-nie { flex-direction: row; }
+.odpowiedzi.tak-nie .odpowiedz { justify-content: center; font-size: 1.05rem; font-weight: 600; padding: 15px; }
+
+.werdykt { margin-top: 16px; padding: 12px 14px; border-radius: var(--promien-maly); font-size: .92rem; font-weight: 600; }
+.werdykt.dobrze { background: var(--dobrze-tlo); color: var(--dobrze); }
+.werdykt.zle { background: var(--zle-tlo); color: var(--zle); }
+
+/* ---------- pułapki i wyjaśnienia ---------- */
+
+.ostrzezenie-pulapka {
+  margin-top: 14px; padding: 12px 14px;
+  background: var(--uwaga-tlo); border-left: 3px solid var(--uwaga);
+  border-radius: var(--promien-maly); font-size: .9rem;
+}
+.naglowek-pulapki {
+  font-weight: 700; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--uwaga); margin-bottom: 5px;
+}
+.ostrzezenie-pulapka p { color: var(--tekst); }
+.ostrzezenie-pulapka .moja-uwaga { color: var(--tekst-2); font-style: italic; }
+
+.uwaga-pulapki { margin-top: 8px; display: flex; gap: 8px; align-items: flex-start; }
+.uwaga-pulapki textarea { flex: 1; min-height: 0; font-size: .88rem; }
+.uwaga-pulapki .przycisk { flex: 0 0 auto; }
+
+.wyjasnienie {
+  margin-top: 14px; padding: 13px 15px;
+  background: var(--powierzchnia-2); border: 1px solid var(--ramka);
+  border-radius: var(--promien-maly);
+}
+.naglowek-wyjasnienia {
+  font-weight: 700; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--tekst-3); margin-bottom: 6px;
+}
+.wyjasnienie p { font-size: .92rem; line-height: 1.55; white-space: pre-wrap; }
+
+.znacznik.pulapka {
+  background: var(--uwaga-tlo); color: var(--uwaga);
+  border-color: color-mix(in srgb, var(--uwaga) 32%, transparent);
+}
+.przycisk-ikona.pulapka {
+  color: var(--uwaga); border-color: var(--uwaga); background: var(--uwaga-tlo);
+}
+
+.stopka-pytania {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  padding: 14px 22px; border-top: 1px solid var(--ramka); background: var(--powierzchnia-2);
+}
+.stopka-pytania .z-prawej { margin-left: auto; display: flex; gap: 8px; }
+
+.przycisk-ikona {
+  font: inherit; cursor: pointer; background: transparent; border: 1px solid var(--ramka-mocna);
+  border-radius: var(--promien-maly); padding: 6px 11px; color: var(--tekst-2); font-size: .85rem;
+  display: inline-flex; align-items: center; gap: 6px; transition: background .13s, color .13s, border-color .13s;
+}
+.przycisk-ikona:hover { background: var(--powierzchnia); color: var(--tekst); }
+.przycisk-ikona.wlaczony { color: var(--akcent); border-color: var(--akcent); background: var(--akcent-tlo); }
+
+.notatka-obszar { padding: 0 22px 18px; }
+.notatka-obszar textarea { font-size: .9rem; }
+.notatka-obszar .rzad { display: flex; gap: 8px; margin-top: 8px; }
+
+/* ---------- egzamin ---------- */
+
+.pasek-egzaminu {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  background: var(--powierzchnia); border: 1px solid var(--ramka); border-radius: var(--promien);
+  padding: 12px 18px; margin-bottom: 16px; box-shadow: var(--cien);
+}
+.zegar { font-family: var(--mono); font-size: 1.15rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.zegar.alarm { color: var(--zle); }
+.etap-egzaminu { font-size: .85rem; color: var(--tekst-2); }
+.pasek-egzaminu .z-prawej { margin-left: auto; display: flex; align-items: center; gap: 14px; }
+
+.zegar-pytania {
+  display: flex; align-items: center; gap: 9px;
+  font-size: .88rem; color: var(--tekst-2); font-variant-numeric: tabular-nums;
+}
+.pierscien { width: 34px; height: 34px; }
+.pierscien circle { fill: none; stroke-width: 3.5; }
+.pierscien .tor { stroke: var(--ramka); }
+.pierscien .wskaz { stroke: var(--akcent); stroke-linecap: round; transition: stroke-dashoffset .95s linear, stroke .3s; transform: rotate(-90deg); transform-origin: 50% 50%; }
+.pierscien .wskaz.alarm { stroke: var(--zle); }
+
+.faza-czytania { text-align: center; padding: 10px; color: var(--tekst-2); font-size: .9rem; }
+
+.wynik-egzaminu { text-align: center; padding: 34px 24px; }
+.wynik-znak { font-size: 46px; line-height: 1; }
+.wynik-punkty { font-family: var(--naglowki); font-size: 3rem; line-height: 1.1; margin: 10px 0 2px; }
+.wynik-punkty.zdany { color: var(--dobrze); }
+.wynik-punkty.oblany { color: var(--zle); }
+.wynik-podpis { color: var(--tekst-2); }
+.wynik-akcje { display: flex; gap: 10px; justify-content: center; margin-top: 22px; flex-wrap: wrap; }
+
+.przeglad-lista { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
+.przeglad-wiersz {
+  display: flex; align-items: center; gap: 12px; padding: 10px 14px;
+  background: var(--powierzchnia); border: 1px solid var(--ramka); border-radius: var(--promien-maly);
+  cursor: pointer; text-align: left; font: inherit; color: inherit; width: 100%;
+}
+.przeglad-wiersz:hover { border-color: var(--akcent); }
+.przeglad-wiersz .stan { flex: 0 0 auto; width: 22px; height: 22px; border-radius: 6px; display: grid; place-items: center; font-size: .75rem; font-weight: 700; color: var(--na-kolorze); }
+.przeglad-wiersz .stan.ok { background: var(--dobrze); }
+.przeglad-wiersz .stan.zle { background: var(--zle); }
+.przeglad-wiersz .stan.brak { background: var(--tekst-3); }
+.przeglad-wiersz .tekst { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .9rem; }
+.przeglad-wiersz .pkt { font-size: .8rem; color: var(--tekst-3); font-variant-numeric: tabular-nums; }
+
+/* ---------- baza pytań ---------- */
+
+.filtry { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
+.filtry input[type=search] { flex: 1; min-width: 200px; }
+.filtry .wybor { width: auto; min-width: 150px; }
+
+.lista-pytan { display: flex; flex-direction: column; gap: 10px; }
+.pozycja-pytania {
+  background: var(--powierzchnia); border: 1px solid var(--ramka); border-radius: var(--promien);
+  padding: 14px 16px; box-shadow: var(--cien);
+}
+.pozycja-gora { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+.pozycja-tresc { font-family: var(--bezszeryf); font-size: 1rem; line-height: 1.45; white-space: pre-wrap; }
+.pozycja-odpowiedzi { margin-top: 10px; display: flex; flex-direction: column; gap: 4px; font-size: .9rem; }
+.pozycja-odpowiedzi .odp { display: flex; gap: 8px; padding: 5px 9px; border-radius: 7px; color: var(--tekst-2); }
+.pozycja-odpowiedzi .odp.ok { background: var(--dobrze-tlo); color: var(--dobrze); font-weight: 600; }
+.pozycja-odpowiedzi .odp .k { font-weight: 700; min-width: 16px; }
+.pozycja-media { margin-top: 12px; }
+.pozycja-media img, .pozycja-media video { max-width: 100%; max-height: 340px; border-radius: var(--promien-maly); display: block; }
+.pozycja-notatka { margin-top: 10px; padding: 9px 12px; background: var(--uwaga-tlo); border-radius: var(--promien-maly); font-size: .88rem; color: var(--tekst); border-left: 3px solid var(--uwaga); white-space: pre-wrap; }
+
+.stronicowanie { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 22px; font-size: .9rem; color: var(--tekst-2); }
+
+/* ---------- statystyki ---------- */
+
+.host-wykresu { width: 100%; min-height: 190px; }
+.wykres { display: block; max-width: 100%; }
+.wykres .siatka-linia { stroke: var(--ramka); stroke-width: 1; }
+.wykres .slupek { fill: var(--akcent); }
+.wykres .slupek.zle { fill: color-mix(in srgb, var(--zle) 70%, transparent); }
+.wykres .linia { fill: none; stroke: var(--akcent); stroke-width: 2; stroke-linejoin: round; }
+.wykres .prog { stroke: var(--dobrze); stroke-dasharray: 4 4; stroke-width: 1.5; }
+.wykres .podpis { fill: var(--tekst-3); font-size: 10px; font-family: var(--bezszeryf); }
+.wykres .punkt { fill: var(--akcent); }
+.wykres .punkt.oblany { fill: var(--zle); }
+
+.legenda { display: flex; gap: 16px; flex-wrap: wrap; font-size: .82rem; color: var(--tekst-2); margin-top: 10px; }
+.legenda span { display: inline-flex; align-items: center; gap: 6px; }
+.legenda i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+
+.tabela { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.tabela th, .tabela td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--ramka); }
+.tabela th { font-size: .76rem; text-transform: uppercase; letter-spacing: .04em; color: var(--tekst-3); font-weight: 650; }
+.tabela tbody tr { cursor: pointer; }
+.tabela tbody tr:hover { background: var(--powierzchnia-2); }
+.tabela .prawo { text-align: right; font-variant-numeric: tabular-nums; }
+.oznaka { font-size: .76rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+.oznaka.zdany { background: var(--dobrze-tlo); color: var(--dobrze); }
+.oznaka.oblany { background: var(--zle-tlo); color: var(--zle); }
+
+/* ---------- różne ---------- */
+
+.pusto { text-align: center; padding: 44px 20px; color: var(--tekst-2); }
+.pusto .znak { font-size: 34px; display: block; margin-bottom: 10px; opacity: .55; }
+
+.podpowiedz-klawiszy { font-size: .8rem; color: var(--tekst-3); margin-top: 14px; text-align: center; }
+kbd {
+  font-family: var(--mono); font-size: .78em; padding: 1px 5px;
+  border: 1px solid var(--ramka-mocna); border-bottom-width: 2px;
+  border-radius: 5px; background: var(--powierzchnia-2); color: var(--tekst-2);
+}
+
+.powiadomienie {
+  position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%);
+  background: var(--tekst); color: var(--tlo);
+  padding: 10px 18px; border-radius: 999px; font-size: .88rem; font-weight: 550;
+  box-shadow: var(--cien-mocny); z-index: 200;
+  animation: wjazd .22s ease;
+}
+@keyframes wjazd { from { opacity: 0; transform: translate(-50%, 10px); } }
+
+.rzad-ustawien {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 15px 0; border-bottom: 1px solid var(--ramka);
+}
+.rzad-ustawien:last-child { border-bottom: none; }
+.rzad-ustawien .opis { font-size: .85rem; color: var(--tekst-2); margin-top: 2px; }
+.rzad-ustawien .sterowanie { flex: 0 0 auto; }
+
+.przelacznik { position: relative; display: inline-block; width: 44px; height: 25px; }
+.przelacznik input { opacity: 0; width: 0; height: 0; }
+.przelacznik .suwak {
+  position: absolute; inset: 0; cursor: pointer; border-radius: 999px;
+  background: var(--ramka-mocna); transition: background .18s;
+}
+.przelacznik .suwak::before {
+  content: ""; position: absolute; width: 19px; height: 19px; left: 3px; top: 3px;
+  background: #fff; border-radius: 50%; transition: transform .18s; box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+.przelacznik input:checked + .suwak { background: var(--akcent); }
+.przelacznik input:checked + .suwak::before { transform: translateX(19px); }
+
+.grupa-przyciskow { display: inline-flex; border: 1px solid var(--ramka-mocna); border-radius: var(--promien-maly); overflow: hidden; }
+.grupa-przyciskow button {
+  font: inherit; font-size: .85rem; padding: 7px 13px; cursor: pointer;
+  background: var(--powierzchnia); border: none; color: var(--tekst-2);
+  border-right: 1px solid var(--ramka);
+}
+.grupa-przyciskow button:last-child { border-right: none; }
+.grupa-przyciskow button.wybrany { background: var(--akcent); color: var(--na-kolorze); }
+
+/* ---------- znaki drogowe ---------- */
+
+.przygaszony { color: var(--tekst-2); font-size: .88rem; margin-bottom: 14px; }
+
+/* Zakładki zawijają się do kolejnego wiersza zamiast jechać w poziomie -
+   pasek przewijania pod nimi wyglądał jak usterka, a nie jak element interfejsu. */
+.zakladki-znakow { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.zakladka-znakow {
+  font: inherit; cursor: pointer; text-align: left;
+  display: flex; align-items: baseline; gap: 8px;
+  padding: 8px 13px; border-radius: var(--promien-maly);
+  background: var(--powierzchnia); border: 1px solid var(--ramka);
+  color: var(--tekst-2); transition: border-color .15s, color .15s;
+}
+.zakladka-znakow:hover { border-color: var(--ramka-mocna); }
+.zakladka-znakow .kod { font-weight: 700; font-size: .95rem; color: var(--tekst); }
+.zakladka-znakow .opis { font-size: .85rem; white-space: nowrap; }
+.zakladka-znakow .ile { font-size: .75rem; color: var(--tekst-3); font-variant-numeric: tabular-nums; }
+.zakladka-znakow.aktywna { background: var(--akcent-tlo); border-color: var(--akcent); color: var(--akcent-ciemny); }
+.zakladka-znakow.aktywna .kod { color: var(--akcent-ciemny); }
+
+.wstep-grupy { margin-bottom: 16px; }
+.wstep-grupy h3 { font-family: var(--naglowki); margin-bottom: 6px; }
+.wstep-grupy .ksztalt { font-size: .88rem; color: var(--akcent-ciemny); margin-bottom: 8px; }
+.wstep-grupy p { font-size: .92rem; color: var(--tekst-2); line-height: 1.6; }
+
+.siatka-znakow { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); }
+
+.karta-znaku { display: flex; gap: 16px; align-items: flex-start; padding: 16px; }
+
+/* Tablice (np. D-42, drogowskazy E, tablice F) zajmują całą szerokość karty,
+   bo w kwadratowej ramce obok tekstu napisy na nich są nieczytelne. */
+.karta-znaku.szeroki { flex-direction: column; gap: 13px; }
+.karta-znaku.szeroki .rysunek-znaku { flex: 0 0 auto; width: 100%; height: auto; min-height: 76px; max-height: 170px; }
+.karta-znaku.szeroki .rysunek-znaku img { max-height: 158px; }
+
+/* Znaki wyższe niż szersze (B-39, B-43) potrzebują wyższej ramki, nie szerszej. */
+.karta-znaku.wysoki .rysunek-znaku { flex-basis: 86px; width: 86px; height: 124px; }
+
+.rysunek-znaku {
+  flex: 0 0 86px; width: 86px; height: 86px;
+  display: grid; place-items: center;
+  /* Znaki bywają białe albo przezroczyste, więc potrzebują własnego tła -
+     inaczej w ciemnym motywie zlewają się z kartą. */
+  background: #fff; border: 1px solid var(--ramka); border-radius: var(--promien-maly);
+  padding: 6px;
+}
+.rysunek-znaku img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.rysunek-znaku .brak-rysunku {
+  font-family: var(--mono); font-size: .8rem; color: var(--tekst-3); text-align: center;
+}
+.tresc-znaku { min-width: 0; flex: 1; }
+.naglowek-znaku { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+.kod-znaku {
+  font-family: var(--mono); font-size: .78rem; font-weight: 700;
+  background: var(--powierzchnia-2); border: 1px solid var(--ramka);
+  border-radius: 6px; padding: 2px 7px; color: var(--tekst-2); white-space: nowrap;
+}
+.nazwa-znaku { font-weight: 650; font-size: .95rem; }
+.nazwa-znaku::first-letter { text-transform: uppercase; }
+.opis-znaku { font-size: .88rem; color: var(--tekst-2); line-height: 1.6; }
+
+/* ---------- podpowiedzi w nauce ---------- */
+
+.rzad-podpowiedzi { margin-top: 14px; }
+
+.blok-podpowiedzi {
+  margin-top: 12px; padding: 14px 16px;
+  background: var(--powierzchnia-2); border-radius: var(--promien-pole);
+}
+.blok-podpowiedzi.brak { color: var(--tekst-2); font-size: .9rem; }
+.naglowek-podpowiedzi { display: flex; align-items: center; gap: 9px; margin-bottom: 9px; flex-wrap: wrap; }
+.blok-podpowiedzi .sedno-zasady { margin-bottom: 8px; background: var(--powierzchnia); }
+.blok-podpowiedzi .przycisk { padding-left: 0; }
+
+/* Odrzucony wariant zostaje widoczny, ale wyraźnie wykluczony - uczący się ma
+   pamiętać, że ta odpowiedź istniała, a nie że jej nigdy nie było. */
+.odpowiedz.odrzucona { opacity: .38; text-decoration: line-through; }
+
+/* ---------- zasady ruchu ---------- */
+
+/* Jedna kolumna zamiast siatki: zasady się czyta, a nie przegląda, więc
+   liczy się długość wiersza, nie liczba kart na ekranie. */
+.lista-zasad { display: flex; flex-direction: column; gap: 12px; }
+.karta-zasady { max-width: 760px; }
+.karta-zasady h3 { margin-bottom: 8px; }
+
+.sedno-zasady {
+  font-size: 1rem; font-weight: 550; color: var(--tekst); line-height: 1.5;
+  padding: 10px 14px; margin-bottom: 10px;
+  background: var(--powierzchnia-2); border-radius: var(--promien-pole);
+  border-left: 3px solid var(--dane);
+}
+.opis-zasady { font-size: .9rem; color: var(--tekst-2); line-height: 1.65; }
+
+.tabela-zasady-otoczka { overflow-x: auto; margin-top: 14px; }
+.tabela-zasady { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.tabela-zasady th {
+  text-align: left; font-weight: 550; color: var(--tekst-3);
+  padding: 7px 12px 7px 0; border-bottom: 1px solid var(--ramka); white-space: nowrap;
+}
+.tabela-zasady td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--ramka); color: var(--tekst-2); }
+.tabela-zasady tr:last-child td { border-bottom: none; }
+/* Ostatnia kolumna to zwykle wartość - ma się rzucać w oczy jak w panelu z danymi. */
+.tabela-zasady td:last-child {
+  color: var(--tekst); font-weight: 550; font-variant-numeric: tabular-nums;
+  white-space: nowrap; padding-right: 0;
+}
+
+/* ---------- telefon ---------- */
+
+@media (max-width: 860px) {
+  body { font-size: 15px; }
+  /* Pasek mobilny ma leżeć nad treścią, a nie obok niej. */
+  .aplikacja { flex-direction: column; }
+  .panel-boczny { display: none; }
+  .tresc { margin-left: 0; width: 100%; padding: 14px 15px calc(78px + env(safe-area-inset-bottom)); }
+
+  .pasek-mobilny {
+    display: flex; align-items: center; gap: 10px;
+    position: sticky; top: 0; z-index: 25;
+    padding: 9px 14px calc(9px + env(safe-area-inset-top));
+    background: color-mix(in srgb, var(--tlo-panel) 92%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--ramka);
+  }
+  .pasek-mobilny .ikona-marka { width: 22px; height: 22px; }
+  .pasek-mobilny .wybor { width: auto; flex: 1; max-width: 130px; }
+  .pasek-mobilny .wybor-przycisk { padding: 6px 9px; font-size: .85rem; }
+  .przycisk-paska {
+    margin-left: auto; width: 34px; height: 34px; flex: 0 0 auto;
+    display: grid; place-items: center; border-radius: var(--promien-maly);
+    border: 1px solid var(--ramka-mocna); color: var(--tekst-2); font-size: .95rem;
+  }
+  .przycisk-paska + .przycisk-paska { margin-left: 0; }
+  .przycisk-paska.aktywny { color: var(--akcent); border-color: var(--akcent); background: var(--akcent-tlo); }
+
+  .nawigacja-dolna {
+    display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30;
+    background: color-mix(in srgb, var(--tlo-panel) 92%, transparent);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--ramka);
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+  }
+  .nawigacja-dolna a {
+    flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
+    padding: 5px 2px; font-size: .68rem; color: var(--tekst-3); font-weight: 550;
+  }
+  .nawigacja-dolna a .ikona { width: 20px; height: 20px; }
+  .nawigacja-dolna a.aktywny { color: var(--akcent); }
+
+  h1 { font-size: 1.4rem; }
+  .naglowek-widoku { margin-bottom: 18px; }
+  .tresc-pytania { padding: 16px; }
+  .pytanie-tekst { font-size: 1.1rem; }
+  .stopka-pytania { padding: 12px 16px; }
+  .notatka-obszar { padding: 0 16px 14px; }
+  .media-pytania img, .media-pytania video { max-height: 44vh; }
+  .siatka-paczek { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+  .karta { padding: 16px; }
+  .kafelek-liczby .wartosc { font-size: 1.6rem; }
+  .filtry .wybor, .filtry input[type=search] { min-width: 0; }
+  .pasek-egzaminu { padding: 10px 14px; gap: 10px; }
+  .siatka-znakow { grid-template-columns: 1fr; }
+  .sedno-zasady { padding: 9px 12px; font-size: .95rem; }
+  .tabela-zasady { font-size: .84rem; }
+  .karta-znaku { padding: 14px; gap: 13px; }
+  .rysunek-znaku { flex-basis: 72px; width: 72px; height: 72px; }
+  .zakladka-znakow .opis { display: none; }
+  .zakladka-znakow { padding: 8px 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}

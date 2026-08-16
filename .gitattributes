@@ -1,0 +1,20 @@
+# Domyślnie git sam rozpoznaje pliki tekstowe i normalizuje je do LF w repozytorium.
+* text=auto
+
+# Skrypty powłoki MUSZĄ mieć końce linii LF. Z CRLF macOS i Linux odmawiają
+# uruchomienia z komunikatem "bad interpreter: /usr/bin/env bash^M".
+# eol=lf działa niezależnie od ustawienia core.autocrlf na komputerze.
+*.sh        text eol=lf
+*.command   text eol=lf
+
+# Pliki wsadowe Windowsa odwrotnie - potrzebują CRLF.
+*.bat       text eol=crlf
+
+# Bez konwersji końców linii.
+*.xlsx      binary
+*.db        binary
+*.jpg       binary
+*.jpeg      binary
+*.png       binary
+*.mp4       binary
+*.webm      binary

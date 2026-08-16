@@ -1,0 +1,1494 @@
+{
+ "A-1": {
+  "nazwa": "niebezpieczny zakręt w prawo",
+  "plik": "PL road sign A-1.svg"
+ },
+ "A-2": {
+  "nazwa": "niebezpieczny zakręt w lewo",
+  "plik": "PL road sign A-2.svg"
+ },
+ "A-3": {
+  "nazwa": "niebezpieczne zakręty – pierwszy w prawo",
+  "plik": "PL road sign A-3.svg"
+ },
+ "A-4": {
+  "nazwa": "niebezpieczne zakręty – pierwszy w lewo",
+  "plik": "PL road sign A-4.svg"
+ },
+ "A-5": {
+  "nazwa": "skrzyżowanie dróg",
+  "plik": "PL road sign A-5.svg"
+ },
+ "A-6a": {
+  "nazwa": "skrzyżowanie z drogą podporządkowaną występującą po obu stronach",
+  "plik": "PL road sign A-6a.svg"
+ },
+ "A-6b": {
+  "nazwa": "skrzyżowanie z drogą podporządkowaną występującą po prawej stronie",
+  "plik": "PL road sign A-6b.svg"
+ },
+ "A-6c": {
+  "nazwa": "skrzyżowanie z drogą podporządkowaną występującą po lewej stronie",
+  "plik": "PL road sign A-6c.svg"
+ },
+ "A-6d": {
+  "nazwa": "wlot drogi jednokierunkowej z prawej strony",
+  "plik": "PL road sign A-6d.svg"
+ },
+ "A-6e": {
+  "nazwa": "wlot drogi jednokierunkowej z lewej strony",
+  "plik": "PL road sign A-6e.svg"
+ },
+ "A-7": {
+  "nazwa": "ustąp pierwszeństwa",
+  "plik": "PL road sign A-7.svg"
+ },
+ "A-8": {
+  "nazwa": "skrzyżowanie o ruchu okrężnym",
+  "plik": "PL road sign A-8.svg"
+ },
+ "A-9": {
+  "nazwa": "przejazd kolejowy z zaporami",
+  "plik": "PL road sign A-9.svg"
+ },
+ "A-10": {
+  "nazwa": "przejazd kolejowy bez zapór",
+  "plik": "PL road sign A-10.svg"
+ },
+ "A-11": {
+  "nazwa": "nierówna droga",
+  "plik": "PL road sign A-11.svg"
+ },
+ "A-11a": {
+  "nazwa": "próg zwalniający",
+  "plik": "PL road sign A-11a.svg"
+ },
+ "A-12a": {
+  "nazwa": "zwężenie jezdni – dwustronne",
+  "plik": "PL road sign A-12a.svg"
+ },
+ "A-12b": {
+  "nazwa": "zwężenie jezdni – prawostronne",
+  "plik": "PL road sign A-12b.svg"
+ },
+ "A-12c": {
+  "nazwa": "zwężenie jezdni – lewostronne",
+  "plik": "PL road sign A-12c.svg"
+ },
+ "A-13": {
+  "nazwa": "ruchomy most",
+  "plik": "PL road sign A-13.svg"
+ },
+ "A-14": {
+  "nazwa": "roboty na drodze",
+  "plik": "PL road sign A-14.svg"
+ },
+ "A-15": {
+  "nazwa": "śliska jezdnia",
+  "plik": "PL road sign A-15.svg"
+ },
+ "A-16": {
+  "nazwa": "przejście dla pieszych",
+  "plik": "PL road sign A-16.svg"
+ },
+ "A-17": {
+  "nazwa": "dzieci",
+  "plik": "PL road sign A-17.svg"
+ },
+ "A-18a": {
+  "nazwa": "zwierzęta gospodarskie",
+  "plik": "PL road sign A-18a.svg"
+ },
+ "A-18b": {
+  "nazwa": "zwierzęta dzikie",
+  "plik": "PL road sign A-18b.svg"
+ },
+ "A-19": {
+  "nazwa": "boczny wiatr",
+  "plik": "PL road sign A-19.svg"
+ },
+ "A-20": {
+  "nazwa": "odcinek jezdni o ruchu dwukierunkowym",
+  "plik": "PL road sign A-20.svg"
+ },
+ "A-21": {
+  "nazwa": "tramwaj",
+  "plik": "PL road sign A-21.svg"
+ },
+ "A-22": {
+  "nazwa": "niebezpieczny zjazd",
+  "plik": "PL road sign A-22.svg"
+ },
+ "A-23": {
+  "nazwa": "stromy podjazd",
+  "plik": "PL road sign A-23.svg"
+ },
+ "A-24": {
+  "nazwa": "rowerzyści",
+  "plik": "PL road sign A-24.svg"
+ },
+ "A-25": {
+  "nazwa": "spadające odłamki skalne",
+  "plik": "PL road sign A-25.svg"
+ },
+ "A-26": {
+  "nazwa": "lotnisko",
+  "plik": "PL road sign A-26.svg"
+ },
+ "A-27": {
+  "nazwa": "nabrzeże lub brzeg rzeki",
+  "plik": "PL road sign A-27.svg"
+ },
+ "A-28": {
+  "nazwa": "sypki żwir",
+  "plik": "PL road sign A-28.svg"
+ },
+ "A-29": {
+  "nazwa": "sygnały świetlne",
+  "plik": "PL road sign A-29.svg"
+ },
+ "A-30": {
+  "nazwa": "inne niebezpieczeństwo",
+  "plik": "PL road sign A-30.svg"
+ },
+ "A-31": {
+  "nazwa": "niebezpieczne pobocze",
+  "plik": "PL road sign A-31.svg"
+ },
+ "A-31a": {
+  "nazwa": "niebezpieczne pobocze po lewej stronie",
+  "plik": "Znak A-31 lewa.svg"
+ },
+ "A-32": {
+  "nazwa": "oszronienie jezdni",
+  "plik": "PL road sign A-32.svg"
+ },
+ "A-33": {
+  "nazwa": "zator drogowy",
+  "plik": "PL road sign A-33.svg"
+ },
+ "A-34": {
+  "nazwa": "wypadek drogowy",
+  "plik": "PL road sign A-34.svg"
+ },
+ "B-1": {
+  "nazwa": "zakaz ruchu w obu kierunkach",
+  "plik": "PL road sign B-1.svg"
+ },
+ "B-2": {
+  "nazwa": "zakaz wjazdu",
+  "plik": "PL road sign B-2.svg"
+ },
+ "B-3": {
+  "nazwa": "zakaz wjazdu pojazdów silnikowych, z wyjątkiem motocykli jednośladowych",
+  "plik": "PL road sign B-3.svg"
+ },
+ "B-3a": {
+  "nazwa": "zakaz wjazdu autobusów",
+  "plik": "PL road sign B-3a.svg"
+ },
+ "B-4": {
+  "nazwa": "zakaz wjazdu motocykli",
+  "plik": "PL road sign B-4.svg"
+ },
+ "B-5": {
+  "nazwa": "zakaz wjazdu samochodów ciężarowych",
+  "plik": "PL road sign B-5.svg"
+ },
+ "B-5a": {
+  "nazwa": "zakaz wjazdu pojazdów i zespołów pojazdów o dopuszczalnej masie całkowitej większej niż określona na znaku",
+  "plik": "PL road sign B-5-6t.svg"
+ },
+ "B-6": {
+  "nazwa": "zakaz wjazdu ciągników rolniczych",
+  "plik": "PL road sign B-6.svg"
+ },
+ "B-7": {
+  "nazwa": "zakaz wjazdu pojazdów silnikowych z przyczepą",
+  "plik": "PL road sign B-7.svg"
+ },
+ "B-8": {
+  "nazwa": "zakaz wjazdu pojazdów zaprzęgowych",
+  "plik": "PL road sign B-8.svg"
+ },
+ "B-9": {
+  "nazwa": "zakaz wjazdu rowerów",
+  "plik": "PL road sign B-9.svg"
+ },
+ "B-10": {
+  "nazwa": "zakaz wjazdu motorowerów",
+  "plik": "PL road sign B-10.svg"
+ },
+ "B-11": {
+  "nazwa": "zakaz wjazdu wózków rowerowych",
+  "plik": "PL road sign B-11.svg"
+ },
+ "B-12": {
+  "nazwa": "zakaz wjazdu wózków ręcznych",
+  "plik": "PL road sign B-12.svg"
+ },
+ "B-13": {
+  "nazwa": "zakaz wjazdu pojazdów z towarami wybuchowymi lub łatwo zapalnymi",
+  "plik": "PL road sign B-13.svg"
+ },
+ "B-13a": {
+  "nazwa": "zakaz wjazdu pojazdów z towarami niebezpiecznymi",
+  "plik": "PL road sign B-13a.svg"
+ },
+ "B-14": {
+  "nazwa": "zakaz wjazdu pojazdów z towarami, które mogą skazić wodę",
+  "plik": "PL road sign B-14.svg"
+ },
+ "B-15": {
+  "nazwa": "zakaz wjazdu pojazdów o szerokości ponad ... m",
+  "plik": "PL road sign B-15-2.0m.svg"
+ },
+ "B-16": {
+  "nazwa": "zakaz wjazdu pojazdów o wysokości ponad ... m",
+  "plik": "PL road sign B-16-3.5m.svg"
+ },
+ "B-17": {
+  "nazwa": "zakaz wjazdu pojazdów o długości ponad ... m",
+  "plik": "PL road sign B-17-6m.svg"
+ },
+ "B-18": {
+  "nazwa": "zakaz wjazdu pojazdów o rzeczywistej masie całkowitej ponad ... t",
+  "plik": "PL road sign B-18-7t.svg"
+ },
+ "B-19": {
+  "nazwa": "zakaz wjazdu pojazdów o nacisku pojedynczej osi napędowej powyżej ... t",
+  "plik": "PL road sign B-19-10t.svg"
+ },
+ "B-20": {
+  "nazwa": "stop",
+  "plik": "PL road sign B-20.svg"
+ },
+ "B-21": {
+  "nazwa": "zakaz skręcania w lewo",
+  "plik": "PL road sign B-21.svg"
+ },
+ "B-22": {
+  "nazwa": "zakaz skręcania w prawo",
+  "plik": "PL road sign B-22.svg"
+ },
+ "B-23": {
+  "nazwa": "zakaz zawracania",
+  "plik": "PL road sign B-23.svg"
+ },
+ "B-24": {
+  "nazwa": "koniec zakazu zawracania",
+  "plik": "PL road sign B-24.svg"
+ },
+ "B-25": {
+  "nazwa": "zakaz wyprzedzania",
+  "plik": "PL road sign B-25.svg"
+ },
+ "B-26": {
+  "nazwa": "zakaz wyprzedzania przez samochody ciężarowe",
+  "plik": "PL road sign B-26.svg"
+ },
+ "B-27": {
+  "nazwa": "koniec zakazu wyprzedzania",
+  "plik": "PL road sign B-27.svg"
+ },
+ "B-28": {
+  "nazwa": "koniec zakazu wyprzedzania przez samochody ciężarowe",
+  "plik": "PL road sign B-28.svg"
+ },
+ "B-29": {
+  "nazwa": "zakaz używania sygnałów dźwiękowych",
+  "plik": "PL road sign B-29.svg"
+ },
+ "B-30": {
+  "nazwa": "koniec zakazu używania sygnałów dźwiękowych",
+  "plik": "PL road sign B-30.svg"
+ },
+ "B-31": {
+  "nazwa": "pierwszeństwo dla nadjeżdżających z przeciwka",
+  "plik": "PL road sign B-31.svg"
+ },
+ "B-32": {
+  "nazwa": "stój – kontrola celna",
+  "plik": "PL road sign B-32.svg"
+ },
+ "B-33": {
+  "nazwa": "ograniczenie prędkości",
+  "plik": "PL road sign B-33-50.svg"
+ },
+ "B-34": {
+  "nazwa": "koniec ograniczenia prędkości",
+  "plik": "PL road sign B-34-50.svg"
+ },
+ "B-35": {
+  "nazwa": "zakaz postoju",
+  "plik": "PL road sign B-35.svg"
+ },
+ "B-36": {
+  "nazwa": "zakaz zatrzymywania się",
+  "plik": "PL road sign B-36.svg"
+ },
+ "B-37": {
+  "nazwa": "zakaz postoju w dni nieparzyste",
+  "plik": "PL road sign B-37.svg"
+ },
+ "B-38": {
+  "nazwa": "zakaz postoju w dni parzyste",
+  "plik": "PL road sign B-38.svg"
+ },
+ "B-39": {
+  "nazwa": "strefa ograniczonego postoju",
+  "plik": "PL road sign B-39.svg"
+ },
+ "B-40": {
+  "nazwa": "koniec strefy ograniczonego postoju",
+  "plik": "PL road sign B-40.svg"
+ },
+ "B-41": {
+  "nazwa": "zakaz ruchu pieszych",
+  "plik": "PL road sign B-41.svg"
+ },
+ "B-42": {
+  "nazwa": "koniec zakazów",
+  "plik": "PL road sign B-42.svg"
+ },
+ "B-43": {
+  "nazwa": "strefa ograniczonej prędkości",
+  "plik": "PL road sign B-43-30.svg"
+ },
+ "B-44": {
+  "nazwa": "koniec strefy ograniczonej prędkości",
+  "plik": "PL road sign B-44-30.svg"
+ },
+ "C-1": {
+  "nazwa": "nakaz jazdy w prawo przed znakiem",
+  "plik": "PL road sign C-1.svg"
+ },
+ "C-2": {
+  "nazwa": "nakaz jazdy w prawo za znakiem",
+  "plik": "Znak C-2.svg"
+ },
+ "C-3": {
+  "nazwa": "nakaz jazdy w lewo przed znakiem",
+  "plik": "PL road sign C-3.svg"
+ },
+ "C-4": {
+  "nazwa": "nakaz jazdy w lewo za znakiem",
+  "plik": "PL road sign C-4.svg"
+ },
+ "C-5": {
+  "nazwa": "nakaz jazdy prosto",
+  "plik": "PL road sign C-5.svg"
+ },
+ "C-6": {
+  "nazwa": "nakaz jazdy prosto lub w prawo",
+  "plik": "PL road sign C-6.svg"
+ },
+ "C-7": {
+  "nazwa": "nakaz jazdy prosto lub w lewo",
+  "plik": "PL road sign C-7.svg"
+ },
+ "C-8": {
+  "nazwa": "nakaz jazdy w prawo lub w lewo",
+  "plik": "PL road sign C-8.svg"
+ },
+ "C-9": {
+  "nazwa": "nakaz jazdy z prawej strony znaku",
+  "plik": "PL road sign C-9.svg"
+ },
+ "C-10": {
+  "nazwa": "nakaz jazdy z lewej strony znaku",
+  "plik": "PL road sign C-10.svg"
+ },
+ "C-11": {
+  "nazwa": "nakaz jazdy z prawej lub z lewej strony znaku",
+  "plik": "PL road sign C-11.svg"
+ },
+ "C-12": {
+  "nazwa": "ruch okrężny (rondo)",
+  "plik": "PL road sign C-12.svg"
+ },
+ "C-13": {
+  "nazwa": "droga dla rowerów",
+  "plik": "PL road sign C-13.svg"
+ },
+ "C-13a": {
+  "nazwa": "koniec drogi dla rowerów",
+  "plik": "PL road sign C-13a.svg"
+ },
+ "C-14": {
+  "nazwa": "prędkość minimalna",
+  "plik": "PL road sign C-14-30.svg"
+ },
+ "C-15": {
+  "nazwa": "koniec prędkości minimalnej",
+  "plik": "PL road sign C-15-30.svg"
+ },
+ "C-16": {
+  "nazwa": "droga dla pieszych",
+  "plik": "PL road sign C-16.svg"
+ },
+ "C-16a": {
+  "nazwa": "koniec drogi dla pieszych",
+  "plik": "PL road sign C-16a.svg"
+ },
+ "C-17": {
+  "nazwa": "nakazany kierunek jazdy dla pojazdów z towarami niebezpiecznymi",
+  "plik": "PL road sign C-17-2.svg"
+ },
+ "C-18": {
+  "nazwa": "nakaz używania łańcuchów przeciwpoślizgowych",
+  "plik": "PL road sign C-18.svg"
+ },
+ "C-19": {
+  "nazwa": "koniec nakazu używania łańcuchów przeciwpoślizgowych",
+  "plik": "PL road sign C-19.svg"
+ },
+ "D-1": {
+  "nazwa": "droga z pierwszeństwem",
+  "plik": "PL road sign D-1.svg"
+ },
+ "D-2": {
+  "nazwa": "koniec drogi z pierwszeństwem",
+  "plik": "PL road sign D-2.svg"
+ },
+ "D-3": {
+  "nazwa": "droga jednokierunkowa",
+  "plik": "PL road sign D-3.svg"
+ },
+ "D-4a": {
+  "nazwa": "droga bez przejazdu",
+  "plik": "PL road sign D-4a.svg"
+ },
+ "D-4b": {
+  "nazwa": "wjazd na drogę bez przejazdu",
+  "plik": "PL road sign D-4b.svg"
+ },
+ "D-5": {
+  "nazwa": "pierwszeństwo na zwężonym odcinku jezdni",
+  "plik": "PL road sign D-5.svg"
+ },
+ "D-6": {
+  "nazwa": "przejście dla pieszych",
+  "plik": "PL road sign D-6.svg"
+ },
+ "D-6a": {
+  "nazwa": "przejazd dla rowerzystów",
+  "plik": "PL road sign D-6a.svg"
+ },
+ "D-6b": {
+  "nazwa": "przejście dla pieszych i przejazd dla rowerzystów",
+  "plik": "PL road sign D-6b.svg"
+ },
+ "D-7": {
+  "nazwa": "droga ekspresowa",
+  "plik": "PL road sign D-7.svg"
+ },
+ "D-8": {
+  "nazwa": "koniec drogi ekspresowej",
+  "plik": "PL road sign D-8.svg"
+ },
+ "D-9": {
+  "nazwa": "autostrada",
+  "plik": "Znak D9.svg"
+ },
+ "D-10": {
+  "nazwa": "koniec autostrady",
+  "plik": "PL road sign D-10.svg"
+ },
+ "D-11": {
+  "nazwa": "początek pasa ruchu dla autobusów",
+  "plik": "PL road sign D-11.svg"
+ },
+ "D-12": {
+  "nazwa": "pas ruchu dla autobusów",
+  "plik": "PL road sign D-12.svg"
+ },
+ "D-13": {
+  "nazwa": "początek pasa ruchu powolnego",
+  "plik": "PL road sign D-13.svg"
+ },
+ "D-13a": {
+  "nazwa": "początek pasa ruchu",
+  "plik": "PL road sign D-13a.svg"
+ },
+ "D-13b": {
+  "nazwa": "początek pasa ruchu na jezdni dwukierunkowej",
+  "plik": "PL road sign D-13b.svg"
+ },
+ "D-14": {
+  "nazwa": "koniec pasa ruchu",
+  "plik": "PL road sign D-14.svg"
+ },
+ "D-15": {
+  "nazwa": "przystanek autobusowy",
+  "plik": "PL road sign D-15.svg"
+ },
+ "D-16": {
+  "nazwa": "przystanek trolejbusowy",
+  "plik": "PL road sign D-16.svg"
+ },
+ "D-17": {
+  "nazwa": "przystanek tramwajowy",
+  "plik": "PL road sign D-17.svg"
+ },
+ "D-18": {
+  "nazwa": "parking",
+  "plik": "PL road sign D-18.svg"
+ },
+ "D-18a": {
+  "nazwa": "parking – miejsce zastrzeżone",
+  "plik": "PL road sign D-18a.svg"
+ },
+ "D-18b": {
+  "nazwa": "parking zadaszony",
+  "plik": "PL road sign D-18b.svg"
+ },
+ "D-19": {
+  "nazwa": "postój taksówek",
+  "plik": "PL road sign D-19.svg"
+ },
+ "D-20": {
+  "nazwa": "koniec postoju taksówek",
+  "plik": "PL road sign D-20.svg"
+ },
+ "D-21": {
+  "nazwa": "szpital",
+  "plik": "PL road sign D-21.svg"
+ },
+ "D-21a": {
+  "nazwa": "policja",
+  "plik": "PL road sign D-21a.svg"
+ },
+ "D-22": {
+  "nazwa": "punkt opatrunkowy",
+  "plik": "PL road sign D-22.svg"
+ },
+ "D-23": {
+  "nazwa": "stacja paliwowa",
+  "plik": "PL road sign D-23.svg"
+ },
+ "D-23a": {
+  "nazwa": "stacja paliwowa tylko z gazem do napędu pojazdów",
+  "plik": "PL road sign D-23a.svg"
+ },
+ "D-23b": {
+  "nazwa": "stacja paliwowa z punktem ładowania pojazdów elektrycznych",
+  "plik": "PL road sign D-23b.svg"
+ },
+ "D-23c": {
+  "nazwa": "punkt ładowania pojazdów elektrycznych",
+  "plik": "PL road sign D-23c.svg"
+ },
+ "D-24": {
+  "nazwa": "telefon",
+  "plik": "PL road sign D-24.svg"
+ },
+ "D-25": {
+  "nazwa": "poczta",
+  "plik": "PL road sign D-25.svg"
+ },
+ "D-25a": {
+  "nazwa": "poczta z ogólnodostępnym telefonem",
+  "plik": "PL road sign D-25 (alternative).svg"
+ },
+ "D-26": {
+  "nazwa": "stacja obsługi technicznej",
+  "plik": "PL road sign D-26.svg"
+ },
+ "D-26a": {
+  "nazwa": "wulkanizacja",
+  "plik": "PL road sign D-26a.svg"
+ },
+ "D-26b": {
+  "nazwa": "myjnia",
+  "plik": "PL road sign D-26b.svg"
+ },
+ "D-26c": {
+  "nazwa": "toaleta publiczna",
+  "plik": "PL road sign D-26c.svg"
+ },
+ "D-26d": {
+  "nazwa": "natrysk",
+  "plik": "Znak D-26d.svg"
+ },
+ "D-27": {
+  "nazwa": "bufet lub kawiarnia",
+  "plik": "PL road sign D-27.svg"
+ },
+ "D-28": {
+  "nazwa": "restauracja",
+  "plik": "PL road sign D-28.svg"
+ },
+ "D-29": {
+  "nazwa": "Hotel (motel)",
+  "plik": "PL road sign D-29.svg"
+ },
+ "D-30": {
+  "nazwa": "Obozowisko (camping)",
+  "plik": "PL road sign D-30.svg"
+ },
+ "D-31": {
+  "nazwa": "obozowisko (camping) wyposażone w podłączenia elektryczne dla przyczep kempingowych",
+  "plik": "PL road sign D-31.svg"
+ },
+ "D-32": {
+  "nazwa": "pole biwakowe",
+  "plik": "PL road sign D-32.svg"
+ },
+ "D-33": {
+  "nazwa": "schronisko młodzieżowe",
+  "plik": "PL road sign D-33.svg"
+ },
+ "D-34": {
+  "nazwa": "punkt informacji turystycznej",
+  "plik": "PL road sign D-34.svg"
+ },
+ "D-34a": {
+  "nazwa": "informacja radiowa o ruchu drogowym",
+  "plik": "PL road sign D-34a.svg"
+ },
+ "D-34b": {
+  "nazwa": "zbiorcza tablica informacyjna",
+  "plik": "PL road sign D-34b.svg"
+ },
+ "D-35": {
+  "nazwa": "przejście podziemne dla pieszych",
+  "plik": "PL road sign D-35.svg"
+ },
+ "D-35a": {
+  "nazwa": "schody ruchome w dół",
+  "plik": "PL road sign D-35a.svg"
+ },
+ "D-36": {
+  "nazwa": "przejście nadziemne dla pieszych",
+  "plik": "PL road sign D-36.svg"
+ },
+ "D-36a": {
+  "nazwa": "schody ruchome w górę",
+  "plik": "PL road sign D-36a.svg"
+ },
+ "D-37": {
+  "nazwa": "tunel",
+  "plik": "PL road sign D-37.svg"
+ },
+ "D-38": {
+  "nazwa": "koniec tunelu",
+  "plik": "Znak D-38.svg"
+ },
+ "D-39": {
+  "nazwa": "dopuszczalne prędkości",
+  "plik": "Znak D-39 (wersja 2021).svg"
+ },
+ "D-39a": {
+  "nazwa": "opłaty drogowe",
+  "plik": "PL road sign D-39a.svg"
+ },
+ "D-40": {
+  "nazwa": "strefa zamieszkania",
+  "plik": "PL road sign D-40.svg"
+ },
+ "D-41": {
+  "nazwa": "koniec strefy zamieszkania",
+  "plik": "PL road sign D-41.svg"
+ },
+ "D-42": {
+  "nazwa": "obszar zabudowany",
+  "plik": "PL road sign D-42.svg"
+ },
+ "D-43": {
+  "nazwa": "koniec obszaru zabudowanego",
+  "plik": "PL road sign D-43.svg"
+ },
+ "D-44": {
+  "nazwa": "strefa płatnego parkowania lub śródmiejska strefa płatnego parkowania",
+  "plik": "PL road sign D-44.svg"
+ },
+ "D-45": {
+  "nazwa": "koniec strefy płatnego parkowania lub śródmiejskiej strefy płatnego parkowania",
+  "plik": "PL road sign D-45.svg"
+ },
+ "D-46": {
+  "nazwa": "droga wewnętrzna",
+  "plik": "PL road sign D-46.svg"
+ },
+ "D-47": {
+  "nazwa": "koniec drogi wewnętrznej",
+  "plik": "PL road sign D-47.svg"
+ },
+ "D-48": {
+  "nazwa": "zmiana pierwszeństwa",
+  "plik": "PL road sign D-48.svg"
+ },
+ "D-49": {
+  "nazwa": "pobór opłat",
+  "plik": "PL road sign D-49.svg"
+ },
+ "D-50": {
+  "nazwa": "zatoka",
+  "plik": "PL road sign D-50.svg"
+ },
+ "D-51": {
+  "nazwa": "automatyczna kontrola prędkości",
+  "plik": "PL road sign D-51.svg"
+ },
+ "D-51a": {
+  "nazwa": "automatyczna kontrola średniej prędkości",
+  "plik": "PL road sign D-51aa.svg"
+ },
+ "D-51b": {
+  "nazwa": "koniec automatycznej kontroli średniej prędkości",
+  "plik": "PL road sign D-51b.svg"
+ },
+ "D-52": {
+  "nazwa": "strefa ruchu",
+  "plik": "PL road sign D-52.svg"
+ },
+ "D-53": {
+  "nazwa": "koniec strefy ruchu",
+  "plik": "PL road sign D-53.svg"
+ },
+ "D-54": {
+  "nazwa": "strefa czystego transportu",
+  "plik": "PL road sign D-54.svg"
+ },
+ "D-55": {
+  "nazwa": "koniec strefy czystego transportu",
+  "plik": "PL road sign D-55.svg"
+ },
+ "E-1": {
+  "nazwa": "tablica przeddrogowskazowa",
+  "plik": "Znak E-1.svg"
+ },
+ "E-1a": {
+  "nazwa": "tablica przeddrogowskazowa na autostradzie",
+  "plik": "Znak E-1a.svg"
+ },
+ "E-2a": {
+  "nazwa": "drogowskaz tablicowy umieszczany obok jezdni",
+  "plik": "Znak E-2a.svg"
+ },
+ "E-2b": {
+  "nazwa": "drogowskaz tablicowy umieszczany nad jezdnią",
+  "plik": "Znak E-2b (na drodze krajowej innej niż autostrada i droga ekspresowa, 2026).svg"
+ },
+ "E-2d": {
+  "nazwa": "drogowskaz tablicowy umieszczany nad jezdnią na autostradzie lub na drodze ekspresowej",
+  "plik": "Znak E-2d (na drodze ekspresowej, 2026).svg"
+ },
+ "E-2e": {
+  "nazwa": "drogowskaz tablicowy umieszczony obok jezdni przed wjazdem na autostradę",
+  "plik": "Znak E-2e.svg"
+ },
+ "E-3": {
+  "nazwa": "drogowskaz w kształcie strzały do miejscowości wskazujący numer drogi",
+  "plik": "Znak E-3.svg"
+ },
+ "E-3a": {
+  "nazwa": "drogowskaz w kształcie strzały do miejscowości wskazujący numer drogi – wersja z dwiema miejscowościami kierunkowymi",
+  "plik": "Znak E-3a.svg"
+ },
+ "E-4": {
+  "nazwa": "drogowskaz w kształcie strzały do miejscowości podający do niej odległość",
+  "plik": "Znak E-4.svg"
+ },
+ "E-5": {
+  "nazwa": "drogowskaz do miejscowości lub dzielnicy miasta nie podający do niej odległości",
+  "plik": "Znak E-5.svg"
+ },
+ "E-5a": {
+  "nazwa": "drogowskaz do centrum miasta",
+  "plik": "Znak E-5a.svg"
+ },
+ "E-6": {
+  "nazwa": "drogowskaz do lotniska",
+  "plik": "Znak E-6.svg"
+ },
+ "E-6a": {
+  "nazwa": "drogowskaz do dworca lub stacji kolejowej",
+  "plik": "Znak E-6a.svg"
+ },
+ "E-6b": {
+  "nazwa": "drogowskaz do dworca autobusowego",
+  "plik": "Znak E-6b.svg"
+ },
+ "E-6c": {
+  "nazwa": "drogowskaz do przystani promowej",
+  "plik": "Znak E-6c.svg"
+ },
+ "E-7": {
+  "nazwa": "drogowskaz do przystani wodnej lub żeglugi",
+  "plik": "Znak E-7.svg"
+ },
+ "E-8": {
+  "nazwa": "drogowskaz do plaży lub miejsca kąpielowego",
+  "plik": "Znak E-8.svg"
+ },
+ "E-9": {
+  "nazwa": "drogowskaz do muzeum",
+  "plik": "Znak E-9.svg"
+ },
+ "E-10": {
+  "nazwa": "drogowskaz do zabytku jako dobra kultury",
+  "plik": "Znak E-10.svg"
+ },
+ "E-11": {
+  "nazwa": "drogowskaz do zabytku przyrody",
+  "plik": "Znak E-11.svg"
+ },
+ "E-12": {
+  "nazwa": "drogowskaz do punktu widokowego",
+  "plik": "Znak E-12.svg"
+ },
+ "E-12a": {
+  "nazwa": "drogowskaz do szlaku rowerowego",
+  "plik": "Znak E-12a.svg"
+ },
+ "E-13": {
+  "nazwa": "tablica kierunkowa",
+  "plik": "Znak E-13.svg"
+ },
+ "E-14": {
+  "nazwa": "tablica szlaku drogowego",
+  "plik": "Znak E-14.svg"
+ },
+ "E-15a": {
+  "nazwa": "numer drogi krajowej",
+  "plik": "Znak E-15a.svg"
+ },
+ "E-15b": {
+  "nazwa": "numer drogi wojewódzkiej",
+  "plik": "Znak E-15b.svg"
+ },
+ "E-15c": {
+  "nazwa": "numer autostrady",
+  "plik": "Znak E-15c.svg"
+ },
+ "E-15d": {
+  "nazwa": "numer drogi ekspresowej",
+  "plik": "Znak E-15d.svg"
+ },
+ "E-16": {
+  "nazwa": "numer szlaku międzynarodowego",
+  "plik": "Znak E-16.svg"
+ },
+ "E-17a": {
+  "nazwa": "miejscowość",
+  "plik": "Znak E-17a.svg"
+ },
+ "E-18a": {
+  "nazwa": "koniec miejscowości",
+  "plik": "Znak E-18a.svg"
+ },
+ "E-19a": {
+  "nazwa": "obwodnica",
+  "plik": "Znak E-19a.svg"
+ },
+ "E-20": {
+  "nazwa": "tablica węzła drogowego",
+  "plik": "Znak E-20 (na autostradzie, 2026).svg"
+ },
+ "E-20a": {
+  "nazwa": "numer węzła drogowego na autostradzie lub drodze ekspresowej",
+  "plik": "Znak E-20a (na autostradzie, 2026).svg"
+ },
+ "E-21": {
+  "nazwa": "dzielnica (osiedle)",
+  "plik": "Znak E-21.svg"
+ },
+ "E-22a": {
+  "nazwa": "samochodowy szlak turystyczny",
+  "plik": "Znak E-22a.svg"
+ },
+ "E-22b": {
+  "nazwa": "obiekt na samochodowym szlaku turystycznym",
+  "plik": "Znak E-22b.svg"
+ },
+ "E-22c": {
+  "nazwa": "informacja o obiektach turystycznych",
+  "plik": "Znak E-22c.svg"
+ },
+ "F-1": {
+  "nazwa": "przejście graniczne",
+  "plik": "PL road sign F-1.svg"
+ },
+ "F-2": {
+  "nazwa": "przekraczanie granicy zabronione",
+  "plik": "PL road sign F-2.svg"
+ },
+ "F-2a": {
+  "nazwa": "granica państwa",
+  "plik": "PL road sign F-2a.svg"
+ },
+ "F-3": {
+  "nazwa": "granica obszaru administracyjnego",
+  "plik": "PL road sign F-3.svg"
+ },
+ "F-3a": {
+  "nazwa": "granica obszaru administracyjnego na granicy powiatu",
+  "plik": "PL road sign F-3a.svg"
+ },
+ "F-3b": {
+  "nazwa": "granica obszaru administracyjnego na granicy gminy",
+  "plik": "PL road sign F-3b.svg"
+ },
+ "F-3c": {
+  "nazwa": "granica obszaru administracyjnego miasta na prawach powiatu",
+  "plik": "PL road sign F-3c.svg"
+ },
+ "F-4": {
+  "nazwa": "nazwa rzeki",
+  "plik": "PL road sign F-4.svg"
+ },
+ "F-5": {
+  "nazwa": "uprzedzenie o zakazie",
+  "plik": "PL road sign F-5.svg"
+ },
+ "F-6": {
+  "nazwa": "Znak uprzedzający umieszczany przed skrzyżowaniem",
+  "plik": "PL road sign F-6.svg"
+ },
+ "F-6a": {
+  "nazwa": "wariant znaku uprzedzającego",
+  "plik": "PL road sign F-6a.svg"
+ },
+ "F-7": {
+  "nazwa": "sposób jazdy w związku z zakazem skręcania w lewo",
+  "plik": "PL road sign F-7.svg"
+ },
+ "F-8": {
+  "nazwa": "objazd w związku z zamknięciem drogi",
+  "plik": "PL road sign F-8.svg"
+ },
+ "F-9": {
+  "nazwa": "znak prowadzący na drodze objazdowej",
+  "plik": "PL road sign F-9.svg"
+ },
+ "F-10": {
+  "nazwa": "kierunki na pasach ruchu",
+  "plik": "PL road sign F-10.svg"
+ },
+ "F-11": {
+  "nazwa": "kierunki na pasie ruchu",
+  "plik": "PL road sign F-11d.svg"
+ },
+ "F-12": {
+  "nazwa": "znak wskazujący przejazd tranzytowy umieszczany przed skrzyżowaniem",
+  "plik": "PL road sign F-12a.svg"
+ },
+ "F-13": {
+  "nazwa": "przejazd tranzytowy",
+  "plik": "PL road sign F-13a.svg"
+ },
+ "F-14a": {
+  "nazwa": "tablica wskaźnikowa na autostradzie umieszczana w odległości 300 m przed pasem wyłączania",
+  "plik": "PL road sign F-14a.svg"
+ },
+ "F-14b": {
+  "nazwa": "tablica wskaźnikowa na autostradzie umieszczana w odległości 200 m przed pasem wyłączania",
+  "plik": "PL road sign F-14b.svg"
+ },
+ "F-14c": {
+  "nazwa": "tablica wskaźnikowa na autostradzie umieszczana w odległości 100 m przed pasem wyłączania",
+  "plik": "PL road sign F-14c.svg"
+ },
+ "F-14d": {
+  "nazwa": "tablica wskaźnikowa drodze ekspresowej umieszczana w odległości 300 m przed pasem wyłączania",
+  "plik": "PL road sign F-14d.svg"
+ },
+ "F-14e": {
+  "nazwa": "tablica wskaźnikowa na drodze ekspresowej umieszczana w odległości 200 m przed pasem wyłączania",
+  "plik": "PL road sign F-14e.svg"
+ },
+ "F-14f": {
+  "nazwa": "tablica wskaźnikowa na drodze ekspresowej umieszczana w odległości 100 m przed pasem wyłączania",
+  "plik": "PL road sign F-14f.svg"
+ },
+ "F-15": {
+  "nazwa": "niesymetryczny podział jezdni dla przeciwnych kierunków ruchu",
+  "plik": "PL road sign F-15a.svg"
+ },
+ "F-16": {
+  "nazwa": "koniec pasa ruchu na jezdni dwukierunkowej",
+  "plik": "PL road sign F-16.svg"
+ },
+ "F-17": {
+  "nazwa": "koniec pasa ruchu na jezdni jednokierunkowej",
+  "plik": "PL road sign F-17.svg"
+ },
+ "F-18": {
+  "nazwa": "przeciwny kierunek dla określonych pojazdów",
+  "plik": "PL road sign F-18.svg"
+ },
+ "F-19": {
+  "nazwa": "pas ruchu dla określonych pojazdów",
+  "plik": "PL road sign F-19.svg"
+ },
+ "F-20": {
+  "nazwa": "część drogi (pas ruchu) dla określonych pojazdów",
+  "plik": "PL road sign F-20.svg"
+ },
+ "F-21": {
+  "nazwa": "ruch skierowany na sąsiednią jezdnię",
+  "plik": "PL road sign F-21.svg"
+ },
+ "F-22": {
+  "nazwa": "ograniczenia na pasie ruchu",
+  "plik": "PL road sign F-22.svg"
+ },
+ "F-23": {
+  "nazwa": "środkowy pas wielofunkcyjny",
+  "plik": "PL road sign F-23.svg"
+ },
+ "F-24": {
+  "nazwa": "zły kierunek",
+  "plik": "PL road sign F-24.svg"
+ },
+ "G-1a": {
+  "nazwa": "słupek wskaźnikowy z trzema kreskami umieszczany po prawej stronie jezdni",
+  "plik": "PL road sign G-1a.svg"
+ },
+ "G-1b": {
+  "nazwa": "słupek wskaźnikowy z dwiema kreskami umieszczany po prawej stronie jezdni",
+  "plik": "PL road sign G-1b.svg"
+ },
+ "G-1c": {
+  "nazwa": "słupek wskaźnikowy z jedną kreską umieszczany po prawej stronie jezdni",
+  "plik": "PL road sign G-1c.svg"
+ },
+ "G-1d": {
+  "nazwa": "słupek wskaźnikowy z trzema kreskami umieszczany po lewej stronie jezdni",
+  "plik": "PL road sign G-1d.svg"
+ },
+ "G-1e": {
+  "nazwa": "słupek wskaźnikowy z dwiema kreskami umieszczany po lewej stronie jezdni",
+  "plik": "PL road sign G-1e.svg"
+ },
+ "G-1f": {
+  "nazwa": "słupek wskaźnikowy z jedną kreską umieszczany po lewej stronie jezdni",
+  "plik": "PL road sign G-1f.svg"
+ },
+ "G-2": {
+  "nazwa": "sieć pod napięciem",
+  "plik": "PL road sign G-2.svg"
+ },
+ "G-3": {
+  "nazwa": "krzyż św. Andrzeja przed przejazdem kolejowo-drogowym jednotorowym",
+  "plik": "PL road sign G-3.svg"
+ },
+ "G-4": {
+  "nazwa": "krzyż św. Andrzeja przed przejazdem kolejowo-drogowym wielotorowym",
+  "plik": "PL road sign G-4.svg"
+ },
+ "T-1": {
+  "nazwa": "tabliczka wskazująca odległość znaku ostrzegawczego od miejsca niebezpiecznego",
+  "plik": "PL road sign T-1.svg"
+ },
+ "T-1a": {
+  "nazwa": "tabliczka wskazująca odległość znaku informacyjnego do początku (końca) drogi, odcinka drogi lub pasa ruchu",
+  "plik": "PL road sign T-1a.svg"
+ },
+ "T-1b": {
+  "nazwa": "tabliczka wskazująca długość tunelu lub odcinek drogi do końca tunelu",
+  "plik": "PL road sign T-1b.svg"
+ },
+ "T-2": {
+  "nazwa": "tabliczka wskazująca długość odcinka drogi, na którym powtarza się lub występuje niebezpieczeństwo",
+  "plik": "PL road sign T-2.svg"
+ },
+ "T-3": {
+  "nazwa": "tabliczka wskazująca koniec odcinka, na którym powtarza się lub występuje niebezpieczeństwo",
+  "plik": "PL road sign T-3.svg"
+ },
+ "T-3a": {
+  "nazwa": "tabliczka wskazująca koniec miejsca przeznaczonego na postój",
+  "plik": "PL road sign T-3a.svg"
+ },
+ "T-4": {
+  "nazwa": "tabliczka wskazująca liczbę zakrętów",
+  "plik": "PL road sign T-4.svg"
+ },
+ "T-5": {
+  "nazwa": "tabliczka wskazująca początek drogi krętej",
+  "plik": "PL road sign T-5.svg"
+ },
+ "T-6a": {
+  "nazwa": "tabliczka wskazująca rzeczywisty przebieg drogi z pierwszeństwem przez skrzyżowanie (umieszczana na drodze z pierwszeństwem)",
+  "plik": "PL road sign T-6a.svg"
+ },
+ "T-6b": {
+  "nazwa": "tabliczka wskazująca układ dróg podporządkowanych (umieszczana na drodze z pierwszeństwem)",
+  "plik": "PL road sign T-6b.svg"
+ },
+ "T-6c": {
+  "nazwa": "tabliczka wskazująca rzeczywisty przebieg drogi z pierwszeństwem przez skrzyżowanie (umieszczana na drodze podporządkowanej)",
+  "plik": "PL road sign T-6c.svg"
+ },
+ "T-6d": {
+  "nazwa": "tabliczka wskazująca prostopadły przebieg drogi z pierwszeństwem przez skrzyżowanie oraz układ dróg podporządkowanych (umieszczana na drodze podporządkowanej)",
+  "plik": "PL road sign T-6d.svg"
+ },
+ "T-7": {
+  "nazwa": "tabliczka wskazująca układ torów i drogi na przejeździe",
+  "plik": "PL road sign T-7.svg"
+ },
+ "T-8": {
+  "nazwa": "tabliczka wskazująca miejsce, w którym ruch pojazdów został skierowany na tory tramwajowe",
+  "plik": "PL road sign T-8.svg"
+ },
+ "T-9": {
+  "nazwa": "tabliczka wskazująca rzeczywistą wielkość spadku lub wzniesienia drogi",
+  "plik": "PL road sign T-9.svg"
+ },
+ "T-10": {
+  "nazwa": "tabliczka wskazująca bocznicę kolejową lub tor o podobnym charakterze",
+  "plik": "Znak T-10 poprawny.svg"
+ },
+ "T-11": {
+  "nazwa": "tabliczka wskazująca przeprawę promową",
+  "plik": "PL road sign T-11.svg"
+ },
+ "T-12": {
+  "nazwa": "tabliczka wskazująca podłużny uskok nawierzchni",
+  "plik": "PL road sign T-12.svg"
+ },
+ "T-13": {
+  "nazwa": "tabliczka wskazująca odcinek drogi, na którym występują deformacje nawierzchni w postaci kolein",
+  "plik": "PL road sign T-13.svg"
+ },
+ "T-14": {
+  "nazwa": "tabliczka wskazująca miejsce częstych wypadków o charakterze wskazanym na tabliczce",
+  "plik": "PL road sign T-14.svg"
+ },
+ "T-14a": {
+  "nazwa": "tabliczka wskazująca miejsce częstych zderzeń z poprzedzającymi pojazdami",
+  "plik": "PL road sign T-14a.svg"
+ },
+ "T-14b": {
+  "nazwa": "tabliczka wskazująca miejsce częstych zderzeń czołowych",
+  "plik": "PL road sign T-14b.svg"
+ },
+ "T-14c": {
+  "nazwa": "tabliczka wskazująca miejsce częstych zderzeń z tramwajami",
+  "plik": "PL road sign T-14c.svg"
+ },
+ "T-14d": {
+  "nazwa": "tabliczka wskazująca przejazd kolejowo–drogowy, na którym warunki powodują szczególne niebezpieczeństwo powstania wypadków",
+  "plik": "PL road sign T-14d.svg"
+ },
+ "T-15": {
+  "nazwa": "tabliczka wskazująca miejsce częstych wypadków spowodowanych śliską nawierzchnią jezdni ze względu na opady deszczu",
+  "plik": "PL road sign T-15.svg"
+ },
+ "T-16": {
+  "nazwa": "tabliczka wskazująca miejsce wyjazdu pojazdów uprzywilejowanych wskazanych na tabliczce",
+  "plik": "PL road sign T-16.svg"
+ },
+ "T-16a": {
+  "nazwa": "tabliczka wskazująca miejsce wyjazdu karetek pogotowia",
+  "plik": "PL road sign T-16a.svg"
+ },
+ "T-17": {
+  "nazwa": "tabliczka wskazująca granicę państwa",
+  "plik": "PL road sign T-17.svg"
+ },
+ "T-18": {
+  "nazwa": "tabliczka wskazująca nieoczekiwaną zmianę kierunku ruchu o przebiegu wskazanym na tabliczce",
+  "plik": "PL road sign T-18.svg"
+ },
+ "T-18a": {
+  "nazwa": "tabliczka wskazująca nieoczekiwaną zmianę kierunku ruchu o przebiegu najpierw w prawo, a potem w lewo",
+  "plik": "PL road sign T-18a.svg"
+ },
+ "T-18b": {
+  "nazwa": "tabliczka wskazująca nieoczekiwaną zmianę kierunku ruchu o przebiegu w lewo",
+  "plik": "PL road sign T-18b.svg"
+ },
+ "T-18c": {
+  "nazwa": "tabliczka wskazująca nieoczekiwaną zmianę kierunku ruchu o przebiegu w prawo",
+  "plik": "PL road sign T-18c.svg"
+ },
+ "T-19": {
+  "nazwa": "tabliczka wskazująca na malowanie znaków poziomych",
+  "plik": "PL road sign T-19.svg"
+ },
+ "T-20": {
+  "nazwa": "tabliczka wskazująca długość odcinka jezdni, na którym zakaz obowiązuje",
+  "plik": "PL road sign T-20.svg"
+ },
+ "T-21": {
+  "nazwa": "tabliczka wskazująca odległość znaku od miejsca, od którego lub w którym zakaz obowiązuje",
+  "plik": "PL road sign T-21.svg"
+ },
+ "T-23a": {
+  "nazwa": "tabliczka wskazująca motocykle",
+  "plik": "PL road sign T-23a.svg"
+ },
+ "T-23b": {
+  "nazwa": "tabliczka wskazująca samochody ciężarowe, pojazdy specjalne, pojazdy używane do celów specjalnych, o dopuszczalnej masie całkowitej przekraczającej 3,5 t, oraz ciągniki samochodowe",
+  "plik": "PL road sign T-23b.svg"
+ },
+ "T-23c": {
+  "nazwa": "tabliczka wskazująca ciągniki rolnicze i pojazdy wolnobieżne",
+  "plik": "PL road sign T-23c.svg"
+ },
+ "T-23d": {
+  "nazwa": "tabliczka wskazująca pojazdy silnikowe z przyczepą, z wyjątkiem pojazdów z przyczepą jednoosiową lub naczepą",
+  "plik": "PL road sign T-23d.svg"
+ },
+ "T-23e": {
+  "nazwa": "tabliczka wskazująca pojazdy z przyczepą kempingową",
+  "plik": "PL road sign T-23e.svg"
+ },
+ "T-23f": {
+  "nazwa": "tabliczka wskazująca autobusy",
+  "plik": "PL road sign T-23f.svg"
+ },
+ "T-23g": {
+  "nazwa": "tabliczka wskazująca trolejbusy",
+  "plik": "PL road sign T-23g.svg"
+ },
+ "T-23h": {
+  "nazwa": "tabliczka wskazująca pojazdy z towarami niebezpiecznymi",
+  "plik": "PL road sign T-23h.svg"
+ },
+ "T-23i": {
+  "nazwa": "tabliczka wskazująca pojazdy z towarami wybuchowymi lub łatwopalnymi",
+  "plik": "PL road sign T-23i.svg"
+ },
+ "T-23j": {
+  "nazwa": "tabliczka wskazująca pojazdy z towarami, które mogą skazić wodę",
+  "plik": "PL road sign T-23j.svg"
+ },
+ "T-24": {
+  "nazwa": "tabliczka wskazująca, że pozostawiony pojazd zostanie usunięty na koszt właściciela",
+  "plik": "PL road sign T-24.svg"
+ },
+ "T-25a": {
+  "nazwa": "tabliczka wskazująca początek zakazu postoju lub zatrzymywania",
+  "plik": "Znak T-25a.svg"
+ },
+ "T-25b": {
+  "nazwa": "tabliczka wskazująca kontynuację zakazu postoju lub zatrzymywania",
+  "plik": "PL road sign T-25b.svg"
+ },
+ "T-25c": {
+  "nazwa": "tabliczka wskazująca odwołanie zakazu postoju lub zatrzymywania",
+  "plik": "PL road sign T-25c.svg"
+ },
+ "T-26": {
+  "nazwa": "tabliczka wskazująca, że zakaz postoju lub zatrzymywania dotyczy strony placu",
+  "plik": "PL road sign T-26.svg"
+ },
+ "T-27": {
+  "nazwa": "tabliczka wskazująca, że przejście dla pieszych jest szczególnie uczęszczane przez dzieci",
+  "plik": "PL road sign T-27.svg"
+ },
+ "T-28": {
+  "nazwa": "tabliczka wskazująca, że za przejazd drogą pobierana jest opłata",
+  "plik": "PL road sign T-28.svg"
+ },
+ "T-28a": {
+  "nazwa": "tabliczka wskazująca koniec odcinka drogi, za przejazd którym pobierana jest opłata",
+  "plik": "PL road sign T-28a.svg"
+ },
+ "T-29": {
+  "nazwa": "tabliczka informująca o miejscu przeznaczonym dla pojazdu samochodowego uprawnionej osoby niepełnosprawnej o obniżonej sprawności ruchowej",
+  "plik": "PL road sign T-29.svg"
+ },
+ "T-30": {
+  "nazwa": "tabliczka wskazująca sposób ustawienia pojazdu względem krawędzi jezdni",
+  "plik": "PL road sign T-30a.svg"
+ },
+ "T-30a": {
+  "nazwa": "tabliczka wskazująca postój całego pojazdu na chodniku równolegle do krawężnika",
+  "plik": "PL road sign T-30a.svg"
+ },
+ "T-30b": {
+  "nazwa": "tabliczka wskazująca postój całego pojazdu na chodniku prostopadle do krawężnika",
+  "plik": "PL road sign T-30b.svg"
+ },
+ "T-30c": {
+  "nazwa": "tabliczka wskazująca postój całego pojazdu na chodniku skośnie do krawężnika",
+  "plik": "PL road sign T-30c.svg"
+ },
+ "T-30d": {
+  "nazwa": "tabliczka wskazująca postój na chodniku kołami przedniej osi pojazdu prostopadle do krawężnika",
+  "plik": "PL road sign T-30d.svg"
+ },
+ "T-30e": {
+  "nazwa": "tabliczka wskazująca postój na chodniku kołami przedniej osi pojazdu skośnie do krawężnika",
+  "plik": "PL road sign T-30e.svg"
+ },
+ "T-30f": {
+  "nazwa": "tabliczka wskazująca postój całego pojazdu na jezdni prostopadle do krawężnika",
+  "plik": "PL road sign T-30f.svg"
+ },
+ "T-30g": {
+  "nazwa": "tabliczka wskazująca postój całego pojazdu na jezdni skośnie do krawężnika",
+  "plik": "PL road sign T-30g.svg"
+ },
+ "T-30h": {
+  "nazwa": "tabliczka wskazująca postój na chodniku kołami jednego boku pojazdu równolegle do krawężnika",
+  "plik": "PL road sign T-30h.svg"
+ },
+ "T-30i": {
+  "nazwa": "tabliczka wskazująca postój całego pojazdu na jezdni równolegle do krawężnika",
+  "plik": "PL road sign T-30i.svg"
+ },
+ "T-31": {
+  "nazwa": "tabliczka wskazująca kategorię tunelu",
+  "plik": "PL road sign T-31b.svg"
+ },
+ "T-31a": {
+  "nazwa": "tunel kategorii „A”",
+  "plik": "PL road sign T-31a.svg"
+ },
+ "T-31b": {
+  "nazwa": "tunel kategorii „B”",
+  "plik": "PL road sign T-31b.svg"
+ },
+ "T-31c": {
+  "nazwa": "tunel kategorii „C”",
+  "plik": "PL road sign T-31c.svg"
+ },
+ "T-31d": {
+  "nazwa": "tunel kategorii „D”",
+  "plik": "PL road sign T-31d.svg"
+ },
+ "T-31e": {
+  "nazwa": "tunel kategorii „E”",
+  "plik": "PL road sign T-31e.svg"
+ },
+ "T-32": {
+  "nazwa": "tabliczka wskazująca minimalny odstęp od poprzedzającego pojazdu",
+  "plik": "PL road sign T-32.svg"
+ },
+ "T-33": {
+  "nazwa": "tabliczka wskazująca umieszczenie w zatoce telefonu alarmowego i gaśnicy",
+  "plik": "PL road sign T-33.svg"
+ },
+ "T-34": {
+  "nazwa": "tabliczka wskazująca pobór opłaty elektronicznej za przejazd drogą publiczną",
+  "plik": "PL road sign T-34.svg"
+ },
+ "P-1": {
+  "nazwa": "linia pojedyncza przerywana",
+  "plik": "Znak P-1.svg"
+ },
+ "P-2": {
+  "nazwa": "linia pojedyncza ciągła",
+  "plik": "Znak P-2.svg"
+ },
+ "P-3": {
+  "nazwa": "linia jednostronnie przekraczalna",
+  "plik": "Znak P-3.svg"
+ },
+ "P-4": {
+  "nazwa": "linia podwójna ciągła",
+  "plik": "Znak P-4.svg"
+ },
+ "P-5": {
+  "nazwa": "linia podwójna przerywana",
+  "plik": "Znak P-5.svg"
+ },
+ "P-6": {
+  "nazwa": "linia ostrzegawcza",
+  "plik": "Znak P-6.svg"
+ },
+ "P-7a": {
+  "nazwa": "linia krawędziowa przerywana",
+  "plik": "Znak P-7a.svg"
+ },
+ "P-7b": {
+  "nazwa": "linia krawędziowa ciągła",
+  "plik": "Znak P-7b.svg"
+ },
+ "P-8a": {
+  "nazwa": "strzałka kierunkowa na wprost",
+  "plik": "Znak P-8a.svg"
+ },
+ "P-8b": {
+  "nazwa": "strzałka kierunkowa do skręcania",
+  "plik": "Znak P-8b.svg"
+ },
+ "P-8c": {
+  "nazwa": "strzałka kierunkowa do zawracania",
+  "plik": "Znak P-8c.svg"
+ },
+ "P-9": {
+  "nazwa": "strzałka naprowadzająca",
+  "plik": "Znak P-9.svg"
+ },
+ "P-10": {
+  "nazwa": "przejście dla pieszych",
+  "plik": "Znak P-10.svg"
+ },
+ "P-11": {
+  "nazwa": "przejazd dla rowerzystów",
+  "plik": "Znak P-11.svg"
+ },
+ "P-12": {
+  "nazwa": "linia bezwzględnego zatrzymania - stop",
+  "plik": "Znak P-12.svg"
+ },
+ "P-13": {
+  "nazwa": "linia warunkowego zatrzymania złożona z trójkątów",
+  "plik": "Znak P-13.svg"
+ },
+ "P-14": {
+  "nazwa": "linia warunkowego zatrzymania złożona z prostokątów",
+  "plik": "Znak P-14.svg"
+ },
+ "P-15": {
+  "nazwa": "trójkąt podporządkowania",
+  "plik": "Znak P-15.svg"
+ },
+ "P-16": {
+  "nazwa": "napis stop",
+  "plik": "Znak P-16.svg"
+ },
+ "P-17": {
+  "nazwa": "linia przystankowa",
+  "plik": "Znak P-17.svg"
+ },
+ "P-18": {
+  "nazwa": "stanowisko postojowe",
+  "plik": "Znak P-18.svg"
+ },
+ "P-19": {
+  "nazwa": "linia wyznaczająca pas postojowy",
+  "plik": "Znak P-19.svg"
+ },
+ "P-20": {
+  "nazwa": "koperta",
+  "plik": "Znak P-20.svg"
+ },
+ "P-21": {
+  "nazwa": "powierzchnia wyłączona",
+  "plik": "Znak P-21.svg"
+ },
+ "P-22": {
+  "nazwa": "BUS",
+  "plik": "Znak P-22.svg"
+ },
+ "P-23": {
+  "nazwa": "rower",
+  "plik": "Znak P-23.svg"
+ },
+ "P-24": {
+  "nazwa": "miejsce dla pojazdu osoby niepełnosprawnej",
+  "plik": "Znak P-24.svg"
+ },
+ "P-25": {
+  "nazwa": "próg zwalniający",
+  "plik": "Znak P-25.svg"
+ },
+ "P-26": {
+  "nazwa": "piesi",
+  "plik": "Znak P-26.png"
+ },
+ "P-27": {
+  "nazwa": "kierunek i tor ruchu roweru",
+  "plik": "Znak P-27.svg"
+ }
+}

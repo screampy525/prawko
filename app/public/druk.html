@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arkusze egzaminacyjne — do wydruku</title>
+<link rel="stylesheet" href="/druk.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖨</text></svg>">
+</head>
+<body>
+
+<div class="pasek-narzedzi" id="pasek-narzedzi">
+  <span class="pasek-tytul">Arkusze egzaminacyjne</span>
+  <span class="pasek-info" id="pasek-info">Przygotowywanie…</span>
+  <div class="pasek-akcje">
+    <button class="przycisk glowny" id="przycisk-drukuj" disabled>Drukuj / zapisz jako PDF</button>
+    <a class="przycisk" href="/#/arkusze">‹ Wróć</a>
+  </div>
+</div>
+
+<div class="wskazowka" id="wskazowka">
+  W oknie drukowania wybierz <strong>„Zapisz jako PDF”</strong> jako drukarkę, żeby zapisać arkusze na dysk.
+  Włącz <strong>grafikę tła</strong>, jeśli chcesz mieć widoczne ramki pól odpowiedzi.
+</div>
+
+<main id="arkusze"></main>
+
+<script src="/druk.js"></script>
+</body>
+</html>
